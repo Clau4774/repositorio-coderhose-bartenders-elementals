@@ -126,21 +126,20 @@ li {
 }
 
 #main-navigation-ul {
-    display: flex;
     margin-bottom: 0;
 }
 
 .main-navigation-li {
     background-color: #cdceca;
-    width: 100%;
     text-align: center;
     font-weight: 600;
     border: 1px solid #000;
     padding: 0.25rem 0;
+    width: 100%;
 }
 
-.main-navigation__li>a {
-    display: inline-block;
+.main-navigation__li a {
+    display: block;
     width: 100%;
 }
 
