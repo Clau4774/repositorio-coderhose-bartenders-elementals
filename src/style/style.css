@@ -172,11 +172,6 @@ section {
     border-radius: 5px;
 }
 
-.texto-con-imagen {
-    display: flex;
-
-}
-
 /* Encabezados, párrafos y secciones*/
 
 section>h2 {
@@ -248,38 +243,43 @@ section>h3 {
 
 footer {
     position: relative;
-    height: 180px;
+    height: 200px;
 }
 
 .contenedor-nuestras-redes {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 50%;
     height: 100%;
+    color: #fff;
     background-color: #9c9395;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.contenedor-nuestras-redes>nav {
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
+.contenedor-nuestras-redes a {
+    color: #fff;
 }
+
 
 .contenedor-derechos-asesoramiento {
-    position: absolute;
-    left: 50%;
     width: 50%;
     height: 100%;
     background-color: #DBDBDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.contenedor-derechos-asesoramiento>div {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%);
+
+.contenedor-derechos-asesoramiento a {
+    padding: 0 1rem;
+    color: #000;
+}
+
+.contenedor-derechos-asesoramiento a:last-of-type::before {
+    content: '';
+    border-left: 1px solid #000;
+
 }
 
 
