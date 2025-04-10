@@ -168,6 +168,16 @@ section {
     border-radius: 5px;
 }
 
+.imagen-section-main {
+    width: 25%;
+    border-radius: 5px;
+}
+
+.texto-con-imagen {
+    display: flex;
+
+}
+
 /* Encabezados, párrafos y secciones*/
 
 section>h2 {
