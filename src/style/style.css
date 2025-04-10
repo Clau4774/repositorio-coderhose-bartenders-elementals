@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Great vibes";
-    src: url("../../assets/font/GreatVibes-Regular.ttf") format('ttf');
+    src: url("../../assets/font/GreatVibes-Regular.ttf") format('truetype');
 }
 
 * {
@@ -36,6 +36,7 @@ h4 {
 
 h4 {
     font-size: 1.25rem;
+    font-weight: 500;
 }
 
 img {
@@ -272,13 +273,13 @@ footer {
 
 
 .contenedor-derechos-asesoramiento a {
-    padding: 0 1rem;
     color: #000;
 }
 
 .contenedor-derechos-asesoramiento a:last-of-type::before {
     content: '';
     border-left: 1px solid #000;
+    padding-left: 1rem;
 
 }
 
