@@ -185,6 +185,9 @@ section {
 .imagen-section-main {
     width: 25%;
     border-radius: 5px;
+    box-shadow: 5px 5px 15px 5px #aaa;
+    border-bottom: 1px solid #666;
+    border-right: 1px solid #666;
 }
 
 /* Encabezados, párrafos y secciones*/
