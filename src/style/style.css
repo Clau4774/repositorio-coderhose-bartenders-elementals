@@ -148,8 +148,8 @@ li {
     width: 100%;
 }
 
-.main-navigation__li a {
-    display: block;
+.main-navigation-li a {
+    display: inline-block;
     width: 100%;
 }
 
