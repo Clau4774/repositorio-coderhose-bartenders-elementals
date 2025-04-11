@@ -72,6 +72,10 @@ img {
     text-align: center;
 }
 
+.font-weight-500 {
+    font-weight: 500;
+}
+
 
 /* Removiendo estilos de lista y enlaces */
 
@@ -273,6 +277,11 @@ footer {
     color: #fff;
 }
 
+.contenedor-nuestras-redes ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
 
 .contenedor-derechos-asesoramiento {
     width: 50%;
@@ -295,6 +304,9 @@ footer {
 
 }
 
+.contenedor-derechos-asesoramiento p {
+    margin-bottom: 0;
+}
 
 /* Logos redes sociales */
 
