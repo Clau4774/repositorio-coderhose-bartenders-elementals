@@ -232,6 +232,9 @@ section>h3 {
     padding: .5rem 0;
     font-size: 1.5rem;
     text-transform: capitalize;
+    background: linear-gradient(298deg, black, transparent);
+    color: #fff;
+    text-shadow: 2px 2px 1px #000;
 }
 
 .card-container-div-img-and-p {
