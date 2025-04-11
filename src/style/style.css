@@ -216,9 +216,11 @@ section>h3 {
     background-color: #B1B1B1;
     padding: 1rem 2rem;
     border-radius: 5px;
+    box-shadow: 3px 3px 5px #333;
 }
 
 .card-container {
+
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
@@ -226,6 +228,7 @@ section>h3 {
     background-color: #DBDBDB;
     border: 1px solid #000;
     border-radius: 5px;
+    box-shadow: 2px 2px 3px #333;
 }
 
 
