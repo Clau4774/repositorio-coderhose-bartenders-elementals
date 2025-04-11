@@ -209,15 +209,13 @@ section>h3 {
 /* Contenedor últimos artículos */
 
 .last-articles-container {
-    max-width: 85vw;
     background-color: #B1B1B1;
-    padding: 3rem;
+    padding: 1rem 2rem;
     border-radius: 5px;
 }
 
 .card-container {
-    margin: 1rem 0;
-    width: 60%;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -227,14 +225,13 @@ section>h3 {
 
 }
 
-.card-container__div-img {
-    width: 100%;
+.card-container-div-img-and-p {
     display: flex;
     justify-content: space-between;
 }
 
-.card-container__div-img img {
-    width: 25%;
+.card-container-div-img-and-p img {
+    width: 150px;
     background-color: #000;
 }
 
