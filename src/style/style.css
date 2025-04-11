@@ -240,7 +240,6 @@ section>h3 {
     background: linear-gradient(298deg, black, transparent);
     color: #fff;
     text-shadow: 2px 2px 1px #000;
-    border-top-right-radius: 5px;
 }
 
 .card-container-div-img-and-p {
@@ -417,27 +416,13 @@ form>textarea {
 
     .card-container {}
 
-
-    .card-container__div-img {
-        width: 40%;
+    .card-container-div-img-and-p {
+        flex-direction: column;
+        gap: 2rem;
     }
 
-    .card-container__div-img img {
-        width: 100px;
-    }
-
-    .card-container__information {
-        padding: 0;
-        margin: 1rem 0;
-        margin-left: .55rem;
-    }
-
-    .card-container__title-and-paragraph h4 {
-        margin-left: 0;
-    }
-
-    .card-container__title-and-paragraph p {
-        font-size: .75rem;
+    .card-container-div-img-and-p img {
+        border-right: none;
     }
 
     /* Button */
