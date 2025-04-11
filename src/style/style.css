@@ -35,8 +35,8 @@ h4 {
 }
 
 h4 {
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 img {
@@ -66,6 +66,10 @@ img {
 
 .underline {
     text-decoration: underline;
+}
+
+.text-center {
+    text-align: center;
 }
 
 
@@ -118,6 +122,10 @@ li {
     font-weight: 600;
 }
 
+.titulo-bienvenida {
+    margin-bottom: 2rem;
+}
+
 
 /* NavBar */
 
@@ -163,7 +171,7 @@ main {
 
 section {
     margin: auto;
-    padding: 2rem;
+    padding: 1rem 2rem;
     width: 65vw;
     border-radius: 5px;
 }
@@ -185,10 +193,14 @@ section>h2 {
 
 section>h3 {
     font-size: 1.5rem;
-    margin: 3rem 0;
+
 }
 
 /* Estilo lista-temas */
+
+.lista-temas li {
+    text-decoration: underline;
+}
 
 /* Contenedor últimos artículos */
 
