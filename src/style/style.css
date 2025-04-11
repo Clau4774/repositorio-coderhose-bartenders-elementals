@@ -221,10 +221,12 @@ section>h3 {
     border-radius: 5px;
 }
 
+
 .card-title {
     text-align: center;
-    padding: 1rem 0;
-    border-bottom: 1px solid #000;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    text-transform: capitalize;
 }
 
 .card-container-div-img-and-p {
@@ -236,21 +238,15 @@ section>h3 {
 
 .card-container-div-img-and-p img {
     width: 150px;
-    border-right: 1px solid #fff;
+    border-right: 2px solid #DBDBDB;
 }
 
 .card-container-div-img-and-p p {
-    margin-bottom: 0;
-    width: 100%;
+    margin: auto;
+    width: 70%;
     text-align: center;
 }
 
-.card-container-div-img-and-p h4 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    text-transform: capitalize;
-}
 
 /* Footer */
 
