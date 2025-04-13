@@ -552,6 +552,7 @@ form>textarea {
 
     footer {
         flex-direction: column;
+        height: fit-content;
     }
 
     .contenedor-nuestras-redes {
