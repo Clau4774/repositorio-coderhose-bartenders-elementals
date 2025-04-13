@@ -502,17 +502,27 @@ form>textarea {
     /* Last article container */
 
     .last-articles-container {
-        max-width: 100%;
-        padding: .50rem;
+        width: 100%;
+        padding: 1rem 2rem;
     }
 
     /* Card */
 
     .card-container {}
 
+    .card-title {
+        font-size: 1.2rem;
+    }
+
     .card-container-div-img-and-p {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
+    }
+
+    .card-container-div-img-and-p p {
+        width: 100%;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
     }
 
     .card-container-div-img-and-p img {
