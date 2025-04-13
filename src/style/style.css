@@ -284,6 +284,10 @@ section>h3 {
 
 /* Estilo lista-temas */
 
+.lista-temas {
+    padding-left: 0;
+}
+
 .lista-temas li {
     text-decoration: underline;
 }
@@ -357,6 +361,12 @@ footer {
     background: #9c9395;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.contenedor-nuestras-redes a {
+    display: flex;
+    gap: 1rem;
     align-items: center;
 }
 
