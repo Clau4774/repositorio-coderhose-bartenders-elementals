@@ -448,10 +448,7 @@ form>textarea {
         width: 100vw;
     }
 
-    .main-container {
-        width: 100vw;
-
-    }
+    .main-container {}
 
     #main-title {
         font-size: 2rem;
