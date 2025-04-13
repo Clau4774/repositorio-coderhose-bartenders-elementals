@@ -486,6 +486,10 @@ form>textarea {
 
     /* Header */
 
+    #main-header {
+        position: static;
+    }
+
     .header-container {
         padding: 1.5rem;
     }
