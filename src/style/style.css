@@ -344,6 +344,8 @@ section>h3 {
 footer {
     height: 200px;
     box-shadow: 0px -2px 30px #000000;
+    display: flex;
+    align-items: center;
 }
 
 .contenedor-nuestras-redes {
@@ -545,4 +547,21 @@ form>textarea {
         font-size: .75rem;
         margin-right: 1rem;
     }
+
+    /* Footer */
+
+    footer {
+        flex-direction: column;
+    }
+
+    .contenedor-nuestras-redes {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .contenedor-derechos-asesoramiento {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
 }
