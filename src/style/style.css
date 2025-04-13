@@ -61,11 +61,27 @@ img {
     border: none;
     cursor: pointer;
     font-family: "Merriweather Sans", serif;
+
 }
 
 .button:hover {
-    background-color: #aaa;
+    animation: button-animation 1s forwards;
 }
+
+@keyframes button-animation {
+    0% {
+        box-shadow: none;
+    }
+
+    50% {
+        box-shadow: 0px 0px 15px #f0f1f1;
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
 
 /* Clases utilitarias */
 
@@ -176,8 +192,7 @@ li {
     }
 
     50% {
-        transform: scale(1.1);
-        background-color: #eee;
+        transform: scale(1.05);
         z-index: 2;
     }
 
