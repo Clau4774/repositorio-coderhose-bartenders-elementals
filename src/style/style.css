@@ -466,6 +466,16 @@ form>textarea {
         padding: 1rem;
     }
 
+    .section-parrafo-e-imagen,
+    .section-parrafo-e-imagen-hablaremos {
+        flex-direction: column;
+    }
+
+    .section-parrafo-e-imagen img,
+    .section-parrafo-e-imagen-hablaremos img {
+        width: 70%;
+    }
+
     .contenedor>p,
     li {
         font-size: 0.85rem;
