@@ -448,10 +448,8 @@ form>textarea {
         width: 100vw;
     }
 
-    .main-container {}
-
     #main-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
 
@@ -470,7 +468,7 @@ form>textarea {
 
     .section-parrafo-e-imagen img,
     .section-parrafo-e-imagen-hablaremos img {
-        width: 70%;
+        width: 90%;
     }
 
     .contenedor>p,
@@ -498,6 +496,7 @@ form>textarea {
     section>h3 {
         font-size: 1.5rem;
         margin: 1.5rem 0;
+        text-align: center;
     }
 
     /* Last article container */
