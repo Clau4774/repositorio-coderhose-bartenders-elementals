@@ -482,6 +482,13 @@ form>textarea {
     aspect-ratio: 4 / 3;
 }
 
+/* Foro */
+
+.container-entradas-foro {
+    padding: 1rem;
+    background: #333;
+}
+
 /* Media querys */
 
 @media (min-width: 150px) and (max-width: 650px) {
