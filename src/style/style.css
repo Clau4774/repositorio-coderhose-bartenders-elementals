@@ -465,6 +465,12 @@ form>textarea {
     text-shadow: 1px 1px #000;
     border-radius: var(--border-radius);
     width: 30%;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #333;
+}
+
+.card-categorie .button {
+    box-shadow: none;
 }
 
 .card-categorie-image-container {
@@ -603,6 +609,12 @@ form>textarea {
     .contenedor-derechos-asesoramiento {
         width: 100%;
         padding: 2rem 0;
+    }
+
+    /* Articulos card-categorie */
+
+    .card-categorie {
+        width: 100%
     }
 
 }
