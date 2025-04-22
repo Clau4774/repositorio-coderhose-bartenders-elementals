@@ -46,8 +46,11 @@ img {
   cursor: pointer;
   font-family: "Merriweather Sans", serif;
   border: none;
-  box-shadow: 5px 5px 10px var(--shadow-color);
+  box-shadow: 5px 5px 10px #aaa;
   width: 100%;
+}
+.button:hover {
+  animation: button-animation 1s forwards;
 }
 
 /*Animaciones*/
@@ -239,10 +242,10 @@ section h3 {
   border-radius: 5px;
   box-shadow: 3px 3px 3px #333;
 }
-
 .card-container .button {
+  border-radius: 0;
   box-shadow: none;
-  background: none;
+  background: linear-gradient(45deg, #000, transparent);
 }
 
 .titulo-tarjeta {

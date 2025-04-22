@@ -50,8 +50,11 @@ img {
     cursor: pointer;
     font-family: "Merriweather Sans", serif;
     border: none;
-    box-shadow: 5px 5px 10px var(--shadow-color);
+    box-shadow: 5px 5px 10px #aaa;
     width: 100%;
+    &:hover {
+        animation: button-animation 1s forwards;
+    }
 }
 
 
@@ -270,7 +273,6 @@ section {
 }
 
 .card-container {
-
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
@@ -279,14 +281,13 @@ section {
     border: 1px solid $negro;
     border-radius: $border-radius;
     box-shadow: $articleContainerShadow;
-}
-
-.card-container  {
     .button {
+        border-radius: 0 ;
         box-shadow: none;
-        background: none;
+        background: linear-gradient(45deg, $negro, transparent);
     }
 }
+
 
 .titulo-tarjeta {
     text-align: center;
