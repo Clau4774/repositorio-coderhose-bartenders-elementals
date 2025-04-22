@@ -1,4 +1,8 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* colores*/
+/*variables borde*/
+/* Sombras */
 @font-face {
   font-family: "Great vibes";
   src: url("../../assets/font/GreatVibes-Regular.ttf") format("truetype");
@@ -9,11 +13,522 @@
   box-sizing: border-box;
 }
 
-/*variables*/
-/* colores*/
 body {
   font-family: "Merriweather Sans", serif;
-  background: radial-gradient(#fff, #ccc);
+  background: radial-gradient(#FFFFFF, #ccc);
+}
+
+/*Ajustes generales de encabezados*/
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Great vibes", serif;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+}
+
+/* Botón */
+.button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  background: linear-gradient(0deg, #808080, #FFFFFF);
+  text-shadow: 1px 1px #000;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: "Merriweather Sans", serif;
+  border: none;
+  box-shadow: 5px 5px 10px var(--shadow-color);
+  width: 100%;
+}
+
+/*Animaciones*/
+@keyframes button-animation {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0px 0px 15px #f0f1f1;
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+/* Clases utilitarias */
+.underline {
+  text-decoration: underline;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/* Removiendo estilos de lista y enlaces */
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Header */
+.main-header {
+  position: sticky;
+  top: 0;
+  background: url(https://i0.wp.com/gentleman.com.mx/wp-content/uploads/2019/03/G-BARRAS-01-1.jpg?fit=1338%2C765&ssl=1);
+  background-position-y: -100px;
+  border-top: 1px solid #000;
+  z-index: 2;
+}
+
+.header-container-title-and-logos {
+  height: 150px;
+}
+
+.main-title {
+  display: inline-block;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 3px 3px 2px #000;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.titulo-bienvenida {
+  margin-bottom: 2rem;
+}
+
+/* NavBar */
+.main-navigation-ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.main-navigation-li {
+  background: linear-gradient(#cdceca, #666665);
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid #000;
+  padding: 0.25rem 0;
+  width: 100%;
+  position: relative;
+}
+.main-navigation-li:hover {
+  animation: nav-hover 1s forwards;
+}
+.main-navigation-li a {
+  display: inline-block;
+  width: 100%;
+  color: #FFFFFF;
+  text-shadow: 2px 2px #000;
+}
+
+/* Animación efecto hover elementos del nav principal */
+@keyframes nav-hover {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.25);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+/* Logo */
+#logo {
+  display: inline-block;
+  width: 98px;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+/* Main y section reglas*/
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  box-shadow: 5px 0px 15px #000;
+  padding: 2rem 0;
+}
+
+section {
+  margin: auto;
+  padding: 1rem 2rem;
+  width: 65vw;
+  border-radius: 5px;
+}
+
+.titulo-introduccion-al-sitio {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-parrafo-e-imagen {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 3rem;
+  padding: 0rem 3rem;
+}
+
+.section-parrafo-e-imagen-hablaremos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.imagen-section {
+  width: 25%;
+  border-radius: 5px;
+  box-shadow: 15px 15px 15px #aaa;
+  border-right: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+
+/* Encabezados, párrafos y secciones*/
+section h2 {
+  margin: auto;
+  font-size: 2.5rem;
+  max-width: 550px;
+  text-align: center;
+  text-decoration: underline;
+}
+section h3 {
+  font-size: 2rem;
+  margin: 2rem 4rem;
+}
+
+/* Estilo lista-temas */
+.lista-temas {
+  padding-left: 0;
+}
+.lista-temas li {
+  text-decoration: underline;
+}
+
+/* Contenedor últimos artículos */
+.last-articles-container {
+  background-color: #B1B1B1;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #333;
+}
+
+.card-container {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #838383;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #333;
+}
+
+.card-container .button {
+  box-shadow: none;
+  background: none;
+}
+
+.titulo-tarjeta {
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  background: linear-gradient(298deg, black, transparent);
+  color: #FFFFFF;
+  text-shadow: 2px 2px 1px #000;
+  margin-bottom: 0;
+}
+
+.card-container-div-img-and-p {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  color: #FFFFFF;
+}
+.card-container-div-img-and-p img {
+  width: 150px;
+  border-right: 2px solid #DBDBDB;
+}
+.card-container-div-img-and-p p {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  height: 200px;
+  box-shadow: 0px -2px 30px #000;
+  display: flex;
+  align-items: center;
+}
+
+.contenedor-nuestras-redes {
+  width: 50%;
+  height: 100%;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-shadow: 1px 1px #000;
+  background: #9c9395;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-nuestras-redes a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: #FFFFFF;
+}
+.contenedor-nuestras-redes h4 {
+  font-size: 1.55rem;
+}
+.contenedor-nuestras-redes ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.contenedor-derechos-asesoramiento {
+  width: 50%;
+  height: 100%;
+  background-color: #DBDBDB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-derechos-asesoramiento a {
+  color: #000;
+}
+.contenedor-derechos-asesoramiento a:last-of-type::before {
+  content: "";
+  border-left: 1px solid #000;
+  padding-left: 1rem;
+}
+.contenedor-derechos-asesoramiento p {
+  margin-bottom: 0;
+}
+
+/* Logos redes sociales */
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+/* Formulario */
+form {
+  background-color: #B1B1B1;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #333;
+}
+form label {
+  display: block;
+  cursor: pointer;
+  margin: 1rem 2rem;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 2px #000;
+}
+form input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 3px 3px 3px #333;
+}
+form textarea {
+  margin-bottom: 1rem;
+  width: 100%;
+  min-height: 150px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 3px 3px 3px #333;
+}
+
+/* Artículos container-categorías */
+.container-categorias {
+  background: #ccc;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #333;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card-categorie {
+  border: 1px solid #000;
+  color: #fff;
+  border-radius: 5px;
+  width: 30%;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px #333;
+}
+.card-categorie .button {
+  box-shadow: none;
+}
+
+.card-categorie-image-container {
+  width: 100%;
+}
+.card-categorie-image-container img {
+  width: 100%;
+  aspect-ratio: 4/3;
+}
+
+/* Foro */
+.container-entradas-foro {
+  padding: 1rem;
+  background: #B1B1B1;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #333;
+}
+
+.entrada-de-foro {
+  padding: 1rem;
+  background: red;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #333;
+}
+.entrada-de-foro a {
+  color: #333;
+}
+.entrada-de-foro a span {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Galería */
+.carousel-galeria {
+  margin: auto;
+  width: 70%;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px #333;
+  background: linear-gradient(#ccc, #333);
+}
+.carousel-galeria img {
+  aspect-ratio: 4/3;
+  border-radius: 5px;
+}
+
+/* Media querys */
+@media (min-width: 150px) and (max-width: 650px) {
+  p,
+  li {
+    font-size: 0.85rem;
+  }
+  /* Main */
+  main {
+    width: 100vw;
+  }
+  .main-title {
+    font-size: 2.5rem;
+  }
+  /* Section */
+  section {
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+  }
+  .section-parrafo-e-imagen,
+  .section-parrafo-e-imagen-hablaremos {
+    flex-direction: column;
+  }
+  .section-parrafo-e-imagen img,
+  .section-parrafo-e-imagen-hablaremos img {
+    width: 90%;
+  }
+  .contenedor > p,
+  li {
+    font-size: 0.85rem;
+  }
+  /* Logo */
+  #logo {
+    display: none;
+  }
+  /* Header */
+  .main-header {
+    position: static;
+  }
+  .header-container {
+    padding: 1.5rem;
+  }
+  .header-container-title-and-logos {
+    height: 0;
+    padding: 3rem 0;
+  }
+  section h1 {
+    font-size: 2rem;
+  }
+  section h2 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  /* Last article container */
+  .last-articles-container {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  /* Card */
+  .titulo-tarjeta {
+    font-size: 1.2rem;
+  }
+  .card-container-div-img-and-p {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .card-container-div-img-and-p p {
+    width: 100%;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+  .card-container-div-img-and-p img {
+    border-right: none;
+  }
+  /* Button */
+  .button {
+    font-size: 0.75rem;
+    margin-right: 1rem;
+  }
+  /* Footer */
+  footer {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .contenedor-nuestras-redes {
+    width: 100%;
+    padding: 2rem 0;
+  }
+  .contenedor-derechos-asesoramiento {
+    width: 100%;
+    padding: 2rem 0;
+  }
+  /* Articulos card-categorie */
+  .card-categorie {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

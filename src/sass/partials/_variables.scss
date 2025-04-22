@@ -1,0 +1,23 @@
+/* colores*/
+
+$grisOscuro: #B1B1B1;
+$grisClaro: #DBDBDB;
+$blanco: #FFFFFF;
+$negro: #000;
+
+/*variables borde*/
+
+$border-radius: 5px;
+@mixin borderRightBottom {
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+
+/* Sombras */
+
+$shadow-right: 15px;
+$shadow-bottom: 15px;
+$shadow-intensity: 15px;
+$shadow-color: #aaa;
+$articleContainerShadow: 3px 3px 3px #333;
+$textShadowBlack: 2px 2px #000;
