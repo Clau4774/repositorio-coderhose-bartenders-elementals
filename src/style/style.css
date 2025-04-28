@@ -412,17 +412,26 @@ form textarea {
 
 .entrada-de-foro {
   padding: 1rem;
-  background: red;
+  background: #DBDBDB;
   border-radius: 5px;
   box-shadow: 3px 3px 3px #333;
+  transition: transform 0.3s;
 }
 .entrada-de-foro a {
   color: #333;
+  text-decoration: none;
 }
 .entrada-de-foro a span {
   display: block;
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
+}
+.entrada-de-foro a img {
+  aspect-ratio: 4/3;
+  border-radius: 5px;
+}
+.entrada-de-foro:hover {
+  transform: scale(1.05);
 }
 
 /* Galería */
@@ -432,7 +441,7 @@ form textarea {
   border: 1px solid #ccc;
   padding: 2rem;
   border-radius: 5px;
-  box-shadow: 2px 2px 3px #333;
+  box-shadow: 3px 3px 3px #333;
   background: linear-gradient(#ccc, #333);
 }
 .carousel-galeria img {
