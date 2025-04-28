@@ -298,6 +298,10 @@ section {
     color: $blanco;
     text-shadow: 2px 2px 1px $negro;
     margin-bottom: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: .5rem;
 }
 
 .card-container-div-img-and-p {
@@ -306,13 +310,14 @@ section {
     background-color: $negro;
     color: $blanco;
     img {
-        width: 150px;
+        width: 250px;
         border-right: 2px solid $grisClaro;
+        aspect-ratio: 1;
     }
     p {
         margin: auto;
-        width: 70%;
         text-align: center;
+        padding: 1rem;
     }
 }
 

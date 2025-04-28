@@ -257,6 +257,10 @@ section h3 {
   color: #FFFFFF;
   text-shadow: 2px 2px 1px #000;
   margin-bottom: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0.5rem;
 }
 
 .card-container-div-img-and-p {
@@ -266,13 +270,14 @@ section h3 {
   color: #FFFFFF;
 }
 .card-container-div-img-and-p img {
-  width: 150px;
+  width: 250px;
   border-right: 2px solid #DBDBDB;
+  aspect-ratio: 1;
 }
 .card-container-div-img-and-p p {
   margin: auto;
-  width: 70%;
   text-align: center;
+  padding: 1rem;
 }
 
 /* Footer */
