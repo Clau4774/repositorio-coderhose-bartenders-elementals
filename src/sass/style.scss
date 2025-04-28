@@ -121,8 +121,7 @@ nav {
 .main-title {
     display: inline-block;
     text-align: center;
-    color: $blanco;
-    text-shadow: 3px 3px 2px $negro;
+    @include textWhite;
     font-size: 3rem;
     font-weight: 600;
     text-transform: capitalize;
@@ -162,8 +161,7 @@ nav {
     a {
     display: inline-block;
     width: 100%;
-    color: $blanco;
-    text-shadow: $textShadowBlack;
+    @include textWhite;
     }
 
 }
@@ -246,6 +244,7 @@ section {
         max-width: 550px;
         text-align: center;
         text-decoration: underline;
+        margin-bottom: 1rem;
     }
     h3 {
         font-size: 2rem;
@@ -295,8 +294,7 @@ section {
     font-size: 1.5rem;
     text-transform: capitalize;
     background: linear-gradient(298deg, black, transparent);
-    color: $blanco;
-    text-shadow: 2px 2px 1px $negro;
+    @include textWhite;
     margin-bottom: 0;
     overflow: hidden;
     white-space: nowrap;
@@ -395,8 +393,7 @@ form {
         display: block;
         cursor: pointer;
         margin: 1rem 2rem;
-        color: $blanco;
-        text-shadow: 2px 2px 2px $negro;
+        @include textWhite;
     }
     input {
         width: 100%;
@@ -467,14 +464,20 @@ form {
     a {
         color: #333;
         text-decoration: none;
-        span {
-            display: block;
+        h3 {
+            
             text-align: center;
             padding: .5rem;
+            font-size: 1.25rem;
+            margin: 0;
+            text-transform: capitalize;
+            @include textWhite;
+            background-color: $negro;
         }
         img {
             aspect-ratio: 4 / 3;
             border-radius: $border-radius;
+            margin-bottom: .5rem;
         }
     }
     &:hover {

@@ -13,6 +13,11 @@ $border-radius: 5px;
     border-bottom: 1px solid #666;
 }
 
+@mixin textWhite {
+    color: $blanco;
+    text-shadow: $textShadowBlack;
+}
+
 /* Sombras */
 
 $shadow-right: 15px;
