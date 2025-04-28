@@ -5,13 +5,15 @@ $grisClaro: #DBDBDB;
 $blanco: #FFFFFF;
 $negro: #000;
 
-/*variables borde*/
+/*variables bordes y mixing*/
 
 $border-radius: 5px;
 @mixin borderRightBottom {
     border-right: 1px solid #666;
     border-bottom: 1px solid #666;
 }
+
+/*Mixin estilo texto con sombra*/
 
 @mixin textWhite {
     color: $blanco;

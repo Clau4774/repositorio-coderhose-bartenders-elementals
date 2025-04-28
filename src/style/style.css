@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 /* colores*/
-/*variables borde*/
+/*variables bordes y mixing*/
+/*Mixin estilo texto con sombra*/
 /* Sombras */
 @font-face {
   font-family: "Great vibes";
@@ -419,18 +420,22 @@ form textarea {
   transition: transform 0.3s;
 }
 .entrada-de-foro a {
-  color: #333;
   text-decoration: none;
 }
 .entrada-de-foro a h3 {
   text-align: center;
   padding: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin: 0;
   text-transform: capitalize;
   color: #FFFFFF;
   text-shadow: 2px 2px #000;
-  background-color: #000;
+  background: radial-gradient(#000, transparent);
+  box-shadow: 3px 3px 3px #333;
+  border-radius: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .entrada-de-foro a img {
   aspect-ratio: 4/3;
