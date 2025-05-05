@@ -229,7 +229,7 @@ section h3 {
 /* Contenedor últimos artículos */
 .last-articles-container {
   background-color: #B1B1B1;
-  padding: 1rem 2rem;
+  padding: 3rem 6rem;
   border-radius: 5px;
   box-shadow: 3px 3px 3px #333;
 }
@@ -449,7 +449,7 @@ form textarea {
 /* Galería */
 .carousel-galeria {
   margin: auto;
-  width: 70%;
+  width: 60%;
   border: 1px solid #ccc;
   padding: 2rem;
   border-radius: 5px;
