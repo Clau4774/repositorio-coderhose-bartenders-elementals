@@ -406,7 +406,7 @@ form textarea {
 
 /* Foro */
 .container-entradas-foro {
-  padding: 1rem;
+  padding: 2rem 1rem;
   background: #B1B1B1;
   border-radius: 5px;
   box-shadow: 3px 3px 3px #333;
