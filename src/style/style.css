@@ -99,7 +99,7 @@ nav ul li a {
 }
 
 .header-container-title-and-logos {
-  height: 150px;
+  padding: 1rem;
 }
 
 .main-title {
@@ -110,6 +110,7 @@ nav ul li a {
   font-size: 3rem;
   font-weight: 600;
   text-transform: capitalize;
+  margin-bottom: 0px;
 }
 
 .titulo-bienvenida {
@@ -154,7 +155,7 @@ nav ul li a {
   }
 }
 /* Logo */
-#logo {
+.main-logo {
   display: inline-block;
   width: 98px;
   background: #FFFFFF;
@@ -175,6 +176,18 @@ section {
   padding: 1rem 2rem;
   width: 65vw;
   border-radius: 5px;
+}
+section h2 {
+  margin: auto;
+  font-size: 2rem;
+  max-width: 550px;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+section h3 {
+  font-size: 1.75rem;
+  margin: 2rem 4rem;
 }
 
 .titulo-introduccion-al-sitio {
@@ -202,20 +215,6 @@ section {
   box-shadow: 15px 15px 15px #aaa;
   border-right: 1px solid #666;
   border-bottom: 1px solid #666;
-}
-
-/* Encabezados, párrafos y secciones*/
-section h2 {
-  margin: auto;
-  font-size: 2.5rem;
-  max-width: 550px;
-  text-align: center;
-  text-decoration: underline;
-  margin-bottom: 1rem;
-}
-section h3 {
-  font-size: 2rem;
-  margin: 2rem 4rem;
 }
 
 /* Estilo lista-temas */
@@ -493,7 +492,7 @@ form textarea {
     font-size: 0.85rem;
   }
   /* Logo */
-  #logo {
+  .main-logo {
     display: none;
   }
   /* Header */
@@ -504,16 +503,14 @@ form textarea {
     padding: 1.5rem;
   }
   .header-container-title-and-logos {
-    height: 0;
-    padding: 3rem 0;
+    padding: 1.5rem 0;
   }
   section h1 {
     font-size: 2rem;
   }
   section h2 {
     font-size: 1.5rem;
-    margin: 1.5rem 0;
-    text-align: center;
+    margin: 1.5rem auto;
   }
   /* Last article container */
   .last-articles-container {
@@ -557,6 +554,36 @@ form textarea {
   /* Articulos card-categorie */
   .card-categorie {
     width: 100%;
+  }
+}
+@media (min-width: 651px) and (max-width: 1024px) {
+  .main-title {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+  section {
+    width: 80vw;
+  }
+  section h1 {
+    font-size: 2rem;
+  }
+  section h2 {
+    font-size: 1.75rem;
+  }
+  .section-parrafo-e-imagen {
+    flex-direction: column;
+  }
+  .section-parrafo-e-imagen img {
+    width: 80%;
+  }
+  .section-parrafo-e-imagen-hablaremos {
+    gap: 1rem;
+  }
+  .section-parrafo-e-imagen-hablaremos .imagen-section {
+    width: 30%;
+  }
+  .last-articles-container {
+    padding: 1.5rem 3rem;
   }
 }
 

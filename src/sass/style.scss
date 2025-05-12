@@ -115,7 +115,7 @@ nav {
 }
 
 .header-container-title-and-logos {
-    height: 150px;
+    padding: 1rem;
 }
 
 .main-title {
@@ -125,6 +125,7 @@ nav {
     font-size: 3rem;
     font-weight: 600;
     text-transform: capitalize;
+    margin-bottom: 0px;
 }
 
 .titulo-bienvenida {
@@ -185,7 +186,7 @@ nav {
 
 /* Logo */
 
-#logo {
+.main-logo {
     display: inline-block;
     width: 98px;
     background: $blanco;
@@ -207,6 +208,19 @@ section {
     padding: 1rem 2rem;
     width: 65vw;
     border-radius: $border-radius;
+     h2 {
+        margin: auto;
+        font-size: 2rem;
+        max-width: 550px;
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 1rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+        margin: 2rem 4rem;
+    
+    }
 }
 
 .titulo-introduccion-al-sitio {
@@ -234,24 +248,6 @@ section {
     box-shadow: $shadow-right $shadow-bottom $shadow-intensity $shadow-color;
     @include borderRightBottom;
 }     
-
-/* Encabezados, párrafos y secciones*/
-
-section {
-    h2 {
-        margin: auto;
-        font-size: 2.5rem;
-        max-width: 550px;
-        text-align: center;
-        text-decoration: underline;
-        margin-bottom: 1rem;
-    }
-    h3 {
-        font-size: 2rem;
-        margin: 2rem 4rem;
-    
-    }
-}
 
 /* Estilo lista-temas */
 
@@ -549,7 +545,7 @@ form {
 
     /* Logo */
 
-    #logo {
+    .main-logo {
         display: none;
     }
 
@@ -564,8 +560,7 @@ form {
     }
 
     .header-container-title-and-logos {
-        height: 0;
-        padding: 3rem 0;
+        padding: 1.5rem 0;
     }
 
     section {
@@ -577,8 +572,7 @@ form {
     section {
         h2 {
             font-size: 1.5rem;
-            margin: 1.5rem 0;
-            text-align: center;
+            margin: 1.5rem auto;
         }
     }
 
@@ -641,4 +635,41 @@ form {
         width: 100%
     }
 
+}
+
+@media (min-width: 651px) and (max-width: 1024px) {
+
+    .main-title {
+        font-size: 2.5rem;
+        margin-bottom: 0;
+    }
+
+    section {
+        width: 80vw;
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.75rem;
+        }
+    }
+
+    .section-parrafo-e-imagen {
+        flex-direction: column;
+        img {
+            width:80%;
+        }
+    }
+
+    
+    .section-parrafo-e-imagen-hablaremos {
+        gap: 1rem;
+        .imagen-section {
+            width:30%;
+        }
+    }
+
+    .last-articles-container {
+        padding: 1.5rem 3rem;
+    }
 }
