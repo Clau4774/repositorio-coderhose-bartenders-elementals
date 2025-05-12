@@ -488,8 +488,7 @@ form {
 
 .carousel-galeria {
     margin: auto;
-    width: 60%;
-    border: 1px solid #ccc;
+    width: 50%;
     padding: 2rem;
     border-radius: $border-radius;
     box-shadow: $articleContainerShadow;
@@ -639,6 +638,14 @@ form {
 
 @media (min-width: 651px) and (max-width: 1024px) {
 
+    .header-container-title-and-logos {
+        padding: .5rem;
+    }
+
+    .main-header {
+        position: static;
+    }
+
     .main-title {
         font-size: 2.5rem;
         margin-bottom: 0;
@@ -671,5 +678,12 @@ form {
 
     .last-articles-container {
         padding: 1.5rem 3rem;
+    }
+
+    
+    .card-container-div-img-and-p {
+        img {
+            width: 15rem;
+        }
     }
 }

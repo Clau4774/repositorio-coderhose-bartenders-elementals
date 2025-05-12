@@ -448,8 +448,7 @@ form textarea {
 /* Galería */
 .carousel-galeria {
   margin: auto;
-  width: 60%;
-  border: 1px solid #ccc;
+  width: 50%;
   padding: 2rem;
   border-radius: 5px;
   box-shadow: 3px 3px 3px #333;
@@ -557,6 +556,12 @@ form textarea {
   }
 }
 @media (min-width: 651px) and (max-width: 1024px) {
+  .header-container-title-and-logos {
+    padding: 0.5rem;
+  }
+  .main-header {
+    position: static;
+  }
   .main-title {
     font-size: 2.5rem;
     margin-bottom: 0;
@@ -584,6 +589,9 @@ form textarea {
   }
   .last-articles-container {
     padding: 1.5rem 3rem;
+  }
+  .card-container-div-img-and-p img {
+    width: 15rem;
   }
 }
 
