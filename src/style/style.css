@@ -226,7 +226,7 @@ section h3 {
 }
 
 /* Contenedor últimos artículos */
-.last-articles-container {
+#last-articles-container {
   background-color: #B1B1B1;
   padding: 3rem 6rem;
   border-radius: 5px;
