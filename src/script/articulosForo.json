@@ -1,0 +1,36 @@
+[
+  {
+    "title": "El negroni",
+    "imageInfo": {
+      "imagePath": "https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/1D4CCB7D-D830-4ED3-9535-875D10CFC801/Derivates/DAD3AE52-E326-4309-90BA-10F6BEEB1EC7.jpg",
+      "imageAltText": "foto de un negroni"
+    },
+    "information": {
+      "historyTitle": "El trago creado por un conde",
+      "historyContent": [
+        "Vamos a hablar de uno de los tragos más emblemáticos de la historia de la coctelería, el negroni.",
+        "Este trago de origen italiano, fue creado por la solicitud del conde Camillo Negroni, el cual le pidió al bartender Fosco Scarselli que haga un cambio en un cóctel que el bebía mucho, el americano.",
+        "Este buscaba una variante más fuerte ya que pidió que se reemplace la soda por gin, lo cual fue un cambio importante en la receta original, dando origen a uno de los tragos más famosos la historia de la coctelería."
+      ],
+      "recipe": {
+        "ingredientList": [
+          {
+            "ingredientName": "Gin",
+            "ingredientQuantity": 1,
+            "mesureScale": "oz"
+          },
+          {
+            "ingredientName": "Vermouth rosso",
+            "ingredientQuantity": 1,
+            "mesureScale": "oz"
+          },
+          {
+            "ingredientName": "Campari",
+            "ingredientQuantity": 1,
+            "mesureScale": "oz"
+          }
+        ]
+      }
+    }
+  }
+]
