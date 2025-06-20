@@ -512,7 +512,7 @@ form textarea {
     margin: 1.5rem auto;
   }
   /* Last article container */
-  .last-articles-container {
+  #last-articles-container {
     width: 100%;
     padding: 1rem 2rem;
   }
@@ -587,7 +587,7 @@ form textarea {
   .section-parrafo-e-imagen-hablaremos .imagen-section {
     width: 30%;
   }
-  .last-articles-container {
+  #last-articles-container {
     padding: 1.5rem 3rem;
   }
   .card-container-div-img-and-p img {
