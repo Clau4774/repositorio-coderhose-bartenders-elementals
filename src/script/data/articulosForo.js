@@ -54,33 +54,38 @@ export default [
       imageAltText: "Foto de un Mojito"
     },
     information: {
-      historyTitle: "Un trago elegante y refrescante",
+      historyTitle: "Un clásico proveniente de la habana",
       historyContent: [
-        "Vamos a hablar de uno de los tragos más emblemáticos de la historia de la coctelería, el negroni.",
-        "Este trago de origen italiano, fue creado por la solicitud del conde Camillo Negroni, el cual le pidió al bartender Fosco Scarselli que haga un cambio en un cóctel que el bebía mucho, el americano.",
-        "Este buscaba una variante más fuerte ya que pidió que se reemplace la soda por gin, lo cual fue un cambio importante en la receta original, dando origen a uno de los tragos más famosos la historia de la coctelería."
+        "El mojito, un clásico trago de origen cubano, dulce, cítrico y fresco. Es un cóctel que nos transporta directo al caribe.",
+        "Según su origen este nació en el siglo XVI. Fue creado por el corsario Richard Drake el cual mezcló aguardiente (una versión rudimentaria del ron, el cual no se añejaba), jugo de lima, jugo de caña de azúcar, menta, hierbas y agua. Esta bebida se utilizaba para combatir el escorbuto (deficiencia de vitamina C).",
+        "Esta primera versión era de un carácter más áspero. El aguardiente era intenso, por lo que la menta, el jugo de caña de azúcar y el jugo de lima hacían que su savor sea más agradable."
       ],
       recipe: {
-        glass: "Old fashioned",
-        iceType: "Entero",
-        garnish: "Media rodaja de naranja",
-        elaborationMethod: "Refrescado",
+        glass: "Trago largo",
+        iceType: "Picado",
+        garnish: "Penacho de menta",
+        elaborationMethod: "Construido",
         difficulty: "Fácil",
         ingredientList: [
           {
-            ingredientName: "Gin",
+            ingredientName: "Ron blanco",
+            ingredientQuantity: 2,
+            mesureScale: "oz"
+          },
+          {
+            ingredientName: "Jugo de lima",
+            ingredientQuantity: 0.75,
+            mesureScale: "oz"
+          },
+          {
+            ingredientName: "Almíbar",
             ingredientQuantity: 1,
             mesureScale: "oz"
           },
           {
-            ingredientName: "Vermouth rosso",
-            ingredientQuantity: 1,
-            mesureScale: "oz"
-          },
-          {
-            ingredientName: "Campari",
-            ingredientQuantity: 1,
-            mesureScale: "oz"
+            ingredientName: "Menta",
+            ingredientQuantity: 15,
+            mesureScale: "hojas"
           }
         ],
         recipeInstructions: [
