@@ -9,7 +9,7 @@ export const crearTarjeta = data => {
                 />
               </a>
               <p>
-                ${data.information.historyContent[0]}
+                ${data.information.historyContent[0]}..
               </p>
             </div>
             <button class="button">Seguir leyendo</button>
