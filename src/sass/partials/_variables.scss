@@ -13,6 +13,10 @@ $border-radius: 5px;
     border-bottom: 1px solid #666;
 }
 
+@mixin border ($grosor: 1px, $color: $negro, $style: solid){
+    border: $grosor $style $color;
+}
+
 /*Mixin estilo texto con sombra*/
 
 @mixin textWhite {
