@@ -145,7 +145,7 @@ export default [
           }
         ],
         recipeInstructions: [
-          "Comenzaremos por enfriar nuestro vaso old fashioned llenando este con hielo picado. Haremos uso de un juego de cocteleras ya que este cóctel es batido.",
+          "Comenzaremos por enfriar nuestro vaso old fashioned llenando este con hielo picado o previamente guardado en un freezer. Haremos uso de un juego de cocteleras ya que este cóctel es batido.",
           "En nuestro mini tin colocamos el whisky escoces, el jugo de lima y el almíbar de miel de jengibre.",
           "Llenamos nuestra coctelera con trozos grandes de hielo y procedemos a batir enérgicamente aproximadamente por unos 10 a 15 segundos. Tenemos que notar que la coctelera se encuentra bien fría.",
           "Realizado esto procedemos a retirar de nuestro vaso el hielo picado e incorporamos hielo entero, de tener un cubo de hielo cristalino sumará mas a la estética de nuestra trago, pero no es indispensable.",

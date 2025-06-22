@@ -315,7 +315,31 @@ section {
     }
 }
 
+/*Articulo*/
 
+.article-introduction-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 40%;
+    margin: auto;
+    .article-introduction-image-container {
+        
+    }
+    img {
+        width: 40%;
+    }
+
+    .article-introduction-recipe-container {
+        width: 50%;
+    }
+}
+
+#article-title {
+    text-align: left;
+    
+    
+    text-transform: capitalize;
+}
 
 /* Footer */
 
