@@ -3,7 +3,7 @@ import { crearTarjeta } from './crearTarjeta.js';
 
 
 
-const cargarUltimosArticulos = (howMany = 1) => {
+const cargarArticulos = (howMany = 1) => {
     let counter = 0;
     return articulosForo.map(article => {
         if(counter === howMany) return null;
@@ -13,4 +13,4 @@ const cargarUltimosArticulos = (howMany = 1) => {
 }
 
 
-export {cargarUltimosArticulos};
+export {cargarArticulos};
