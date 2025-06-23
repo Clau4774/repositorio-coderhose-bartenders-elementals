@@ -157,5 +157,52 @@ export default [
       },
       link: '/src/articulo.html?title=penicillin'
     }
+  },
+  {
+    title: "Un clásico, de clásicos. El Manhattan",
+    imageInfo: {
+      imagePath: "https://tragos.washkuapp.com/cdn-cgi/imagedelivery/APNgvbEQnqs0QABTHivMOg/e3b3389c-0bdf-483d-8460-4c697098a400/w=240",
+      imageAltText: "Foto de un Manhattan"
+    },
+    information: {
+      historyTitle: "Manhattan'",
+      historyContent: [
+        "Con nombre a ciudad, elegancia y sencillez, les vengo a hablar del 'Manhattan'. Uno de los grandes clásicos del siglo pasado.",
+        "Este cóctel tiene muchas historias sobre su origen, como muchos otros. La historia que les voy a contar se remonta a principios de 1870. Jennie Jerome estaba haciendo un banquete en honor al candidato a presidente Samuel J. Tilden.",
+        "Según cuenta la historia en este evento la misma Jennie Jerome (Madre de Churchill), fue la responsable de crear este magnífico cóctel."
+      ],
+      recipe: {
+        glass: "Copa coupe",
+        iceType: "Sin hielo",
+        garnish: "Cereza",
+        elaborationMethod: "Refrescado",
+        difficulty: "Medio",
+        ingredientList: [
+          {
+            ingredientName: "Bourbon",
+            ingredientQuantity: 2,
+            mesureScale: "oz"
+          },
+          {
+            ingredientName: "Vermouth rosso",
+            ingredientQuantity: 1,
+            mesureScale: "oz"
+          },
+          {
+            ingredientName: "Amargo de angostura",
+            ingredientQuantity: 3,
+            mesureScale: "golpes"
+          }
+        ],
+        recipeInstructions: [
+          "Para elaborar este magnifico cóctel vamos a enfriar una copa coupe y hacer uso de nuestro vaso de composición, al cual le colocaremos hielo entero para poder refrescar nuestro preparado en el.",
+          "Incorporamos las medidas de nuestros ingredientes en el vaso de composición y refrescamos por aproximadamente 30 a 45 segundos o al notar que la bebida se encuentre bien fría.",
+          "Colamos el trago en nuestra copa coupe con la ayuda de un colador hawthorne o julep.",
+          "Para darle un toque especial, pelamos un trozo de cascara de naranja cerca de nuestra copa para que los aceites esenciales de dicha fruta se impregnen en esta, posterior exprimimos la piel obtenida para acentuar aún más dicho aroma.",
+          "Como último paso haciendo uso de un pincho clavamos una cereza y la colocamos dentro de nuestra copa o posicionada en el borde sin tocar el líquido, esto es una cuestión de gustos."
+        ]
+      },
+      link: '/src/articulo.html?title=manhattan'
+    }
   }
 ]
