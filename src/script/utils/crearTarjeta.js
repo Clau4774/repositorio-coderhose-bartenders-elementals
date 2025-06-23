@@ -12,6 +12,6 @@ export const crearTarjeta = data => {
                 ${data.information.historyContent[0]}..
               </p>
             </div>
-            <button class="button">Seguir leyendo</button>
+            <a href="${data.information.link}"><button class="button">Seguir leyendo</button></a>
           </article>`
 }

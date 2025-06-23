@@ -1,4 +1,4 @@
-const cargarArticulo = (articulos, articulo) => {
+const cargarArticulo = (articulo) => {
     const listaDeArticulos = document.querySelector('#article-title');
     const articleImage = document.querySelector('#article-image');
     

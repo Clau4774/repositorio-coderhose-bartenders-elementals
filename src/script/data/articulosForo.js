@@ -44,7 +44,8 @@ export default [
           "Para finalizar decoramos un media rodaja de naranja y si queremos darle un toque especial podemos perfumar el cóctel con los aceites esenciales de una piel de naranja.",
           "Finalizados todos estos pasos podemos proceder a beber este interesante cóctel, el cual tiene un perfil algo dulce, de presencia alcohólica y levemente amargo."
         ]
-      }
+      },
+      link: '/src/articulo.html?title=negroni'
     }
   },
   {
@@ -99,7 +100,8 @@ export default [
           "Con la ayuda de nuestra cucharilla de barra vamos integrando con un movimiento de abajo hacia arriba, buscando que el hielo se vaya diluyendo, lo cual hará que nuestro trago se enfríe. Esta misma acción además generará que incorporemos bien el sabor de los ingredientes.",
           "Para finalizar colocamos un sorbete y realizamos para decorar un penacho de menta. La forma en la que sugiero hacerlo es separando los eslabones de la menta y tratar de quedarnos con algunas puntas para que el resultado final sea más vistoso."
         ]
-      }
+      },
+      link: '/src/articulo.html?title=mojito'
     }
   },
     {
@@ -152,7 +154,8 @@ export default [
           "Doble colamos el trago con la ayuda de nuestro colador oruga y un colador de malla fina para evitar los trocitos de hielo que se forman por la batida.",
           "Para finalizar echaremos un dash de whisky de tipo islay para dar una buena sensación de ahumado y decoraremos con un caramelo de jengibre. En caso de no tener caramelos de jengibre, otra alternativa puede ser una piel de lima o una rodaja de lima deshidratada."
         ]
-      }
+      },
+      link: '/src/articulo.html?title=penicillin'
     }
   }
 ]

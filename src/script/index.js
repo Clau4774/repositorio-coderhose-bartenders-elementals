@@ -1,4 +1,4 @@
-import { cargarArticulos } from "./utils/cargarArticulosForo.js";
+import { cargarArticulos } from "./utils/cargarArticulos.js";
 
 const lastArticlesContainer = document.querySelector("#last-articles-container");
 
