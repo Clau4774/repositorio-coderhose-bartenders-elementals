@@ -590,12 +590,17 @@ form textarea {
   .article-introduction-container .article-introduction-image-container {
     width: 100%;
   }
+  .article-introduction-container .article-introduction-image-container img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
   .article-introduction-container .article-introduction-recipe-container {
     width: 100%;
   }
   .article-introduction-container .article-introduction-recipe-container #article-introduction-recipe-title {
-    padding: 0;
+    padding: 1rem 0;
     margin: 0;
+    font-size: 1.5rem;
   }
   /* Button */
   .button {
