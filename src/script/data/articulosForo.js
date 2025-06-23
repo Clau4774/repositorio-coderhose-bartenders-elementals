@@ -58,7 +58,7 @@ export default [
       historyTitle: "Un clásico proveniente de la habana",
       historyContent: [
         "El mojito, un clásico trago de origen cubano, dulce, cítrico y fresco. Es un cóctel que nos transporta directo al caribe.",
-        "Según su origen este nació en el siglo XVI. Fue creado por el corsario Richard Drake el cual mezcló aguardiente (una versión rudimentaria del ron, el cual no se añejaba), jugo de lima, jugo de caña de azúcar, menta, hierbas y agua. Esta bebida se utilizaba para combatir el escorbuto (deficiencia de vitamina C).",
+        "Según su origen este nació en el siglo XVI. Fue creado por el corsario Richard Drake el cual mezcló aguardiente (una versión rudimentaria del ron, el cual no se añejaba),  jugo de lima, jugo de caña de azúcar, menta, hierbas y agua. Esta bebida se utilizaba para combatir el escorbuto (deficiencia de vitamina C).",
         "Esta primera versión era de un carácter más áspero. El aguardiente era intenso, por lo que la menta, el jugo de caña de azúcar y el jugo de lima hacían que su savor sea más agradable."
       ],
       recipe: {
