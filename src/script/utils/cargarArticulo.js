@@ -1,8 +1,4 @@
 export const cargarArticulo = (articulo) => {
-    if(Object.hasOwn(articulo, 'error')) {
-        console.log(articulo);
-    }
-
     const getElem = elem => document.querySelector(elem);
 
     const siteParts = {
@@ -12,6 +8,12 @@ export const cargarArticulo = (articulo) => {
     };
 
     const {articleImage, articleTitle, ingredientsContainer} = siteParts;
+
+    if(Object.hasOwn(articulo, 'error')) {
+        const mainContainer = getElem('.main-container');
+        return mainContainer.innerHTML = `<h1 style="text-align: center; min-height: 45vh;">${articulo.error}</h1>`
+    }
+
 
     
     const {title, imageInfo, information} = articulo;
