@@ -5,7 +5,3 @@ const lastArticlesContainer = document.querySelector("#last-articles-container")
 const articulosAMostrar = cargarArticulos();
 
 lastArticlesContainer.innerHTML = articulosAMostrar;
-
-const dir = window.location;
-
-console.log(dir.pathname)

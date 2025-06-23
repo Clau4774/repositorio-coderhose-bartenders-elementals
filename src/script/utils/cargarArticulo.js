@@ -6,10 +6,11 @@ export const cargarArticulo = (articulo) => {
         articleImage: getElem('#article-image'),
         ingredientsContainer: getElem('#article-introduction-recipe-ingredient'),
         cocktailHistoryTitle: getElem('#cocktail-history-title'),
-        cocktailHistoryContainer: getElem('#cocktail-history-container') 
+        cocktailHistoryContainer: getElem('#cocktail-history-container'),
+        cocktailElaborationContainer: getElem('#cocktail-elaboration-container')
     };
 
-    const {articleImage, articleTitle, ingredientsContainer, cocktailHistoryTitle, cocktailHistoryContainer} = siteParts;
+    const {articleImage, articleTitle, ingredientsContainer, cocktailHistoryTitle, cocktailHistoryContainer, cocktailElaborationContainer} = siteParts;
 
     if(Object.hasOwn(articulo, 'error')) {
         const mainContainer = getElem('.main-container');
@@ -35,4 +36,6 @@ export const cargarArticulo = (articulo) => {
 
     cocktailHistoryTitle.innerText = historyTitle;
     cocktailHistoryContainer.innerHTML = historyContent.map(item => `<p>${item}</p>`).join('');
+
+    cocktailElaborationContainer.innerHTML = recipeInstructions.map(content => `<p>${content}</p>`).join('');
 }
