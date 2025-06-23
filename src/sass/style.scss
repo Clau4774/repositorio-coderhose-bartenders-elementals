@@ -318,43 +318,50 @@ section {
 /*Articulo*/
 
 .article-introduction-container {
-    position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
     max-width: 720px;
     @include border;
     border-radius: $border-radius;
     margin: auto;
+    
     .article-introduction-image-container {
-        width: 40%;
+        width: 30%;
+        border-right: 1px solid #000;
         img {
             border-top-left-radius: $border-radius;
             border-bottom-left-radius: $border-radius;
         }
     }
-    .article-introduction-recipe-container {
-        width: 60%;
-        padding: 2rem 0;
 
+    .article-introduction-recipe-container {
+        width: 70%;
         #article-introduction-recipe-title {
             border-bottom: 1px solid #000;
+            padding: 1rem 0;
+            
         }
-
         #article-introduction-recipe-ingridients {
-            padding: 0px 2rem;
+            margin: auto;
+            padding: 1rem 0;
+            background: red;
+            .ingridient {
+                width: 70%;
+                margin: auto;                
+            }
         }
     }
 
-    &::after {
-        content: '';
-        position: absolute;
+    // &::after {
+    //     content: '';
+    //     position: absolute;
         
-        height: 100%;
-        top: 0;
-        left: 40%;
-        border-right: 1px solid #000;
-    }
+    //     height: 100%;
+    //     top: 0;
+    //     left: 40%;
+    //     border-right: 1px solid #000;
+    // }
 }
 
 #article-title {
