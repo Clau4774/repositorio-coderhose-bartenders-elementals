@@ -314,12 +314,15 @@ section h3 {
   text-align: center;
   background: #000;
   color: #fff;
-  text-shadow: 2px 2px 1px red;
   list-style: none;
 }
 .article-introduction-container .article-introduction-recipe-container #article-introduction-recipe-ingredient .ingredient {
   width: 70%;
   margin: auto;
+  border-bottom: 1px solid #fff;
+}
+.article-introduction-container .article-introduction-recipe-container #article-introduction-recipe-ingredient .ingredient:last-child {
+  border-bottom: none;
 }
 
 #article-title {

@@ -348,11 +348,15 @@ section {
             padding: 1rem 0;
             text-align: center;
             background: #000;
-            @include textShadow($textShadow: 2px 2px 1px red );
+            color: #fff;
             list-style: none;
             .ingredient {
                 width: 70%;
-                margin: auto;                
+                margin: auto;     
+                border-bottom: 1px solid #fff;           
+                &:last-child  {
+                    border-bottom: none;
+                }
             }
         }
     }
