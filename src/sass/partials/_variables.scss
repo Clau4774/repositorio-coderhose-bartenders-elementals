@@ -19,9 +19,13 @@ $border-radius: 5px;
 
 /*Mixin estilo texto con sombra*/
 
-@mixin textWhite {
-    color: $blanco;
-    text-shadow: $textShadowBlack;
+@mixin textShadow ($color: #fff, $textShadow: $textShadowBlack){
+    color: $color;
+    text-shadow: $textShadow;
+}
+
+@mixin boxShadow ($x: 2px, $y: 2px, $intensity: 2px, $color: #333) {
+    box-shadow: $x $y $intensity $color;
 }
 
 /* Sombras */
