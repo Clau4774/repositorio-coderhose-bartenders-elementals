@@ -165,7 +165,7 @@ export default [
       imageAltText: "Foto de un Manhattan"
     },
     information: {
-      historyTitle: "Manhattan'",
+      historyTitle: "Manhattan",
       historyContent: [
         "Con nombre a ciudad, elegancia y sencillez, les vengo a hablar del 'Manhattan'. Uno de los grandes clásicos del siglo pasado.",
         "Este cóctel tiene muchas historias sobre su origen, como muchos otros. La historia que les voy a contar se remonta a principios de 1870. Jennie Jerome estaba haciendo un banquete en honor al candidato a presidente Samuel J. Tilden.",
