@@ -654,6 +654,24 @@ form {
         }
     }
 
+    /*Articulo*/
+
+    .article-introduction-container {
+        flex-direction: column;
+        margin: auto;
+        max-width: 70%;
+        .article-introduction-image-container {
+            width:100%;
+        }
+        .article-introduction-recipe-container {
+            width: 100%;
+            #article-introduction-recipe-title {
+            padding: 0;
+            margin: 0;
+        }
+        }
+    }
+
     /* Button */
 
     .button {
