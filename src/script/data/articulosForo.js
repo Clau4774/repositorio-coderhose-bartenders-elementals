@@ -174,7 +174,7 @@ export default [
       recipe: {
         glass: "Copa coupe",
         iceType: "Sin hielo",
-        garnish: "Cereza",
+        garnish: "Cereza y piel de naranja",
         elaborationMethod: "Refrescado",
         difficulty: "Medio",
         ingredientList: [

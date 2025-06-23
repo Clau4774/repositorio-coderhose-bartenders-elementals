@@ -4,10 +4,12 @@ export const cargarArticulo = (articulo) => {
     const siteParts = {
         articleTitle: getElem('#article-title'),
         articleImage: getElem('#article-image'),
-        ingredientsContainer: getElem('#article-introduction-recipe-ingredient')
+        ingredientsContainer: getElem('#article-introduction-recipe-ingredient'),
+        cocktailHistoryTitle: getElem('#cocktail-history-title'),
+        cocktailHistoryContainer: getElem('#cocktail-history-container') 
     };
 
-    const {articleImage, articleTitle, ingredientsContainer} = siteParts;
+    const {articleImage, articleTitle, ingredientsContainer, cocktailHistoryTitle, cocktailHistoryContainer} = siteParts;
 
     if(Object.hasOwn(articulo, 'error')) {
         const mainContainer = getElem('.main-container');
@@ -29,5 +31,8 @@ export const cargarArticulo = (articulo) => {
     articleImage.src = imagePath;
     articleImage.alt = imageAltText;
 
-    ingredientsContainer.innerHTML = ingredientList.map(ingrediente => `<li class="ingredient">${ingrediente.ingredientQuantity} ${ingrediente.mesureScale} ${ingrediente.ingredientName}</li>`).join('');
+    ingredientsContainer.innerHTML = `<li class="ingredient">Método de elaboración: ${elaborationMethod}</li> <li class="ingredient">Cristalería: ${glass}</li> ` + ingredientList.map(ingrediente => `<li class="ingredient">${ingrediente.ingredientQuantity} ${ingrediente.mesureScale} ${ingrediente.ingredientName}</li>`).join('') + `<li>Garnish: ${garnish}</li>`;
+
+    cocktailHistoryTitle.innerText = historyTitle;
+    cocktailHistoryContainer.innerHTML = historyContent.map(item => `<p>${item}</p>`).join('');
 }
