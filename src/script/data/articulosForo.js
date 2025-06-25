@@ -1,7 +1,7 @@
 export default [
   {
     title: "El negroni",
-    name: 'Negroni',
+    name: 'negroni',
     imageInfo: {
       imagePath: "https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/1D4CCB7D-D830-4ED3-9535-875D10CFC801/Derivates/DAD3AE52-E326-4309-90BA-10F6BEEB1EC7.jpg",
       imageAltText: "foto de un negroni"
@@ -51,7 +51,7 @@ export default [
   },
   {
     title: "Como hacer un buen Mojito",
-    name: 'Mojito',
+    name: 'mojito',
     imageInfo: {
       imagePath: "https://www.saveur.com/uploads/2007/02/SAVEUR_Mojito_1149-Edit-scaled.jpg?auto=webp",
       imageAltText: "Foto de un Mojito"
@@ -108,7 +108,7 @@ export default [
   },
     {
     title: "El penicillin: Un clásico moderno.",
-    name: 'Penicillin',
+    name: 'penicillin',
     imageInfo: {
       imagePath: "https://www.liquor.com/thmb/FsPcbBZ5fnQy3mWgZ-xDPqxeS0Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/penicillin-720x720-primary-8157bd54c63948c4b5a3ad5b3986965a.jpg",
       imageAltText: "Foto de un Penicillin"
@@ -163,7 +163,7 @@ export default [
   },
   {
     title: "Un clásico, de clásicos. El Manhattan",
-    name: 'Manhattan',
+    name: 'manhattan',
     imageInfo: {
       imagePath: "https://tragos.washkuapp.com/cdn-cgi/imagedelivery/APNgvbEQnqs0QABTHivMOg/e3b3389c-0bdf-483d-8460-4c697098a400/w=240",
       imageAltText: "Foto de un Manhattan"

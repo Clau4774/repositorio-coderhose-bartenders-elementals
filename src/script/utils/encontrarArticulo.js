@@ -2,7 +2,9 @@ import articulosForo from "../data/articulosForo.js";
 
 export const encontrarArticulo = (option = undefined) => {    
     if(option !== undefined && option.trim() !== '') {
-        const filteredArticles = articulosForo.filter(elem => elem.name.includes(option));
+        const filteredArticles = articulosForo.filter(elem => elem.name.includes(option.toLowerCase()));
+        console.log(filteredArticles, "filteredArticles");
+        console.log(option, 'option')
 
         if(filteredArticles.length === 0) {
             console.log('EntraAca')

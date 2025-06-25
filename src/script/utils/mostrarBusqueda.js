@@ -9,7 +9,7 @@ export const mostrarBusqueda = busqueda => {
 
     if(busqueda.error) return searchNavBarResult.innerHTML = `
         <li class="search-navbar-result-element">
-            <span>${busqueda.error}</span>
+            <span class="search-not-found">${busqueda.error}</span>
         </li>
         `;
 
