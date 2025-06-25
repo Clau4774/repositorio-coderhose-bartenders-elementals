@@ -1,5 +1,6 @@
 export default [
   {
+    id: 1,
     title: "El negroni",
     name: 'negroni',
     category: ['clásico', 'clasico', 'fuerte', 'gin', 'vermouth', 'vermouth rosso', 'campari', 'amargo'],
@@ -51,6 +52,7 @@ export default [
     }
   },
   {
+    id: 2,
     title: "Como hacer un buen Mojito",
     name: 'mojito',
     category: ['clásico', 'clasico', 'suave', 'refrescante', 'gasificado', 'ron', 'ron blanco'],
@@ -109,6 +111,7 @@ export default [
     }
   },
     {
+      id: 3,
     title: "El penicillin: Un clásico moderno.",
     name: 'penicillin',
     category: ['moderno', 'clasico', 'clásico', 'fuerte', 'sour', 'whisky', 'whisky escoces', 'ahumado'],
@@ -165,6 +168,7 @@ export default [
     }
   },
   {
+    id: 4,
     title: "Un clásico, de clásicos. El Manhattan",
     name: 'manhattan',
     category: ['clasico', 'clásico', 'fuerte', 'whisky escoces', 'whisky', 'vermouth', 'vermouth rosso', 'amargo', 'amargo de angostura'],
@@ -212,5 +216,64 @@ export default [
       },
       link: '/src/articulo.html?title=manhattan'
     }
-  }
+  },
+  {
+    id: 5,
+    title: "Whiskey sour, un cóctel con día propio",
+    name: 'whiskey sour',
+    category: ['clasico', 'clásico', 'sour', 'whiskey americano', 'whisky', 'bourbon', 'cítrico', 'dulce', 'amargo de angostura', 'cremoso'],
+    imageInfo: {
+      imagePath: "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2024-03-whiskey-sour%2Fwhiskey-sour-699_1",
+      imageAltText: "Foto de un whiskey sour"
+    },
+    information: {
+      historyTitle: "El cóctel que se popularizó en la prohibición",
+      historyContent: [
+        "Con un origen un poco dudoso y diferentes historias, hoy vamos a hablar del 'whiskey sour'. Un cóctel elegante, ácido y dulce a la vez, con cuerpo cremoso.",
+        "Este cóctel se popularizo en la época de la leí seca, destaco entre la familia de los sours convirtiéndose en el más popular de estos en aquellos días.",
+        "Este cóctel de tipo sour se presume que fue creado entre los años 1860 y 1870. Como he mencionado antes, su origen tiene distintos relatos, uno de estos dice que fue creado por 'Elliott Stubb', un mayordomo inglés. Cuya creación fue realizada en un barco en la cercanías de Inquique, Chile.",
+        "También se puede encontrar una receta de este trago en el libro de Jerry Thomas, 'How to mix drinks' (1862).",
+        "La fama de este cóctel llegó a tal punto de que el día 25 de Agosto se celebra el 'Día del whiskey sour'"
+
+      ],
+      recipe: {
+        glass: "Vaso old fashioned",
+        iceType: "Hielo entero",
+        garnish: "3 golpes de amargo de angostura",
+        elaborationMethod: "Batido",
+        difficulty: "Medio",
+        ingredientList: [
+          {
+            ingredientName: "Bourbon",
+            ingredientQuantity: 2,
+            mesureScale: "oz"
+          },
+          {
+            ingredientName: "Jugo de limón",
+            ingredientQuantity: 0.75,
+            mesureScale: "oz"
+          },
+          {
+            ingredientName: "Almíbar",
+            ingredientQuantity: 1,
+            mesureScale: "oz"
+          },
+          {
+            ingredientName: "Clara de huevo",
+            ingredientQuantity: 1,
+            mesureScale: ""
+          }
+        ],
+        recipeInstructions: [
+          "Para comenzar con esté cóctel primero pondremos a enfriar un vaso 'old fashioned' o vaso de whisky.",
+          "En nuestra coctelera pondremos todos los ingredientes. Cerrar esta y a realizar primero un 'dry shake' (batido en seco), esto quiere decir batir sin hielo. Lo hacemos para emulsionar la clara de huevo y con esto conseguir un mejor resultado generando más espuma y cuerpo. En caso de no querer utilizar clara de huevo, está se puede reemplazar por aquafaba (agua de garbanzos).",
+          "Después de realizar esto, pasamos a colocar hielo en nuestra coctelera y volvemos a batir de forma enérgica de 10 a 15 segundos, el objetivo es que el cóctel se encuentre bien frío. Un detalle importante es utilizar trozos grandes de hielo para generar una mejor textura y no sobre diluir nuestro cóctel.",
+          "Procedemos a doble colar nuestro trago con la ayuda de un colador oruga y un colador fino, este nos garantiza no tener pequeños fragmentos de hielo que pueden cambiar la experiencia. Es importante utilizar en el vaso trozos de hielo entero para preservar mejor nuestro cóctel y poder mantenerlo frío por más tiempo.",
+          "Para finalizar vertimos sobre la espuma generada 3 golpes de amargo de angostura, este es el decorado clásico. Yo te animo a que juegues con la espuma generada y el amargo de angostura y que pruebes hacer patrones y diferentes diseños. Otro detalle que queda muy bien es rociar el cóctel con perfume de piel de limón.",
+          "Te invito a probar este exquisito trago, es muy rico y es una buena opción para la gente que esta empezando a beber tragos y no esta acostumbrada a los sabores muy fuertes."
+        ]
+      },
+      link: '/src/articulo.html?title=whiskeySour'
+    }
+  }  
 ]
