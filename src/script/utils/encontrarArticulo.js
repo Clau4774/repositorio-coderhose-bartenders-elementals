@@ -2,9 +2,9 @@ import articulosForo from "../data/articulosForo.js";
 
 export const encontrarArticulo = (option = undefined) => {    
     if(option !== undefined && option.trim() !== '') {
-        const findArticle = articulosForo.find(elem => elem.information.link.includes(option));
+        const filteredArticles = articulosForo.filter(elem => elem.name.includes(option));
 
-        return findArticle || {error: 'Articulo no encontrado...'};
+        return filteredArticles || {error: 'Articulo no encontrado...'};
     }
 
     const windowSearch = window.location.pathname + window.location.search;
