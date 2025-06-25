@@ -161,7 +161,8 @@ nav ul li a {
   background: linear-gradient(#cdceca, #666665);
 }
 #search-navbar #search-navbar-result .search-navbar-result-element .search-not-found {
-  padding-left: 1rem;
+  display: block;
+  text-align: center;
 }
 #search-navbar #search-navbar-result .search-navbar-result-element a {
   display: flex;
@@ -172,7 +173,9 @@ nav ul li a {
   width: 20%;
 }
 #search-navbar #search-navbar-result .search-navbar-result-element a span {
-  margin: auto;
+  display: block;
+  width: 80%;
+  text-align: center;
 }
 
 /* Animación efecto hover elementos del nav principal */

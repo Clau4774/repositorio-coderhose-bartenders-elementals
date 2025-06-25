@@ -190,7 +190,8 @@ nav {
         .search-navbar-result-element {
 
             .search-not-found {
-                padding-left: 1rem;
+                display: block;
+                text-align: center;
             }
             a{
                 display: flex;
@@ -200,7 +201,9 @@ nav {
                     width: 20%;
                 }
                 span {
-                    margin: auto;
+                    display: block;
+                    width: 80%;
+                    text-align: center
                 };
             }
             

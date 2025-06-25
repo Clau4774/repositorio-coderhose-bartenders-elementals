@@ -19,7 +19,7 @@ export const mostrarBusqueda = busqueda => {
         <li class="search-navbar-result-element">
             <a href="${search.information.link}">
                 <img src="${search.imageInfo.imagePath}" alt="${search.imageInfo.imageAltText}">
-                <span>${search.name}</span>
+                <span>${search.title}</span>
             </a>
         </li>
         `).join('');
