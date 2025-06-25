@@ -142,6 +142,28 @@ nav ul li a {
   text-shadow: 2px 2px #000;
 }
 
+#search-navbar {
+  background: linear-gradient(#cdceca, #666665);
+}
+#search-navbar #input-busqueda {
+  margin: auto;
+  display: block;
+  width: 20%;
+  padding: 0.25rem 0.55rem;
+  text-align: center;
+}
+#search-navbar #search-navbar-result {
+  width: 100%;
+}
+#search-navbar #search-navbar-result .search-navbar-result-element a {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+#search-navbar #search-navbar-result .search-navbar-result-element a img {
+  width: 10%;
+}
+
 /* Animación efecto hover elementos del nav principal */
 @keyframes nav-hover {
   0% {

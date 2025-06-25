@@ -12,6 +12,8 @@ export const cargarArticulo = (articulo) => {
 
     const {articleImage, articleTitle, ingredientsContainer, cocktailHistoryTitle, cocktailHistoryContainer, cocktailElaborationContainer} = siteParts;
 
+    if(articulo === undefined) return;
+
     if(Object.hasOwn(articulo, 'error')) {
         const mainContainer = getElem('.main-container');
         return mainContainer.innerHTML = `<h1 style="text-align: center; min-height: 45vh;">${articulo.error}</h1>`

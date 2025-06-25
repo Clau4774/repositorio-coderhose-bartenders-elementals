@@ -167,6 +167,38 @@ nav {
 
 }
 
+#search-navbar{
+    background: linear-gradient(#cdceca, #666665);
+
+        #input-busqueda {
+        margin: auto;
+        display: block;
+        width: 20%;
+        padding: .25rem .55rem;
+        text-align: center;
+    }
+
+    #search-navbar-result {
+        width: 100%;
+        .search-navbar-result-element {
+            
+            a{
+                margin: auto;    
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 10%;
+                }
+            }
+            
+        }
+    }
+
+    
+}
+
+
+
 /* Animación efecto hover elementos del nav principal */
 
 @keyframes nav-hover {

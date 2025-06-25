@@ -4,8 +4,17 @@ export const encontrarArticulo = (option = undefined) => {
     if(option !== undefined && option.trim() !== '') {
         const filteredArticles = articulosForo.filter(elem => elem.name.includes(option));
 
-        return filteredArticles || {error: 'Articulo no encontrado...'};
+        if(filteredArticles.length === 0) {
+            console.log('EntraAca')
+            return {error: 'Artículo no encontrado...'};
+        }
+
+        return filteredArticles ;
     }
+
+    console.log(option)
+
+    if(option === undefined){
 
     const windowSearch = window.location.pathname + window.location.search;
 
@@ -13,4 +22,5 @@ export const encontrarArticulo = (option = undefined) => {
     
 
     return  findArticle || {error: 'Articulo no encontrado...'};
+    }
 }
