@@ -233,7 +233,7 @@ export default [
         "Este cóctel se popularizo en la época de la leí seca, destaco entre la familia de los sours convirtiéndose en el más popular de estos en aquellos días.",
         "Este cóctel de tipo sour se presume que fue creado entre los años 1860 y 1870. Como he mencionado antes, su origen tiene distintos relatos, uno de estos dice que fue creado por 'Elliott Stubb', un mayordomo inglés. Cuya creación fue realizada en un barco en la cercanías de Inquique, Chile.",
         "También se puede encontrar una receta de este trago en el libro de Jerry Thomas, 'How to mix drinks' (1862).",
-        "La fama de este cóctel llegó a tal punto de que el día 25 de Agosto se celebra el 'Día del whiskey sour'"
+        "La fama de este cóctel llegó a tal punto de que el día 25 de Agosto se celebra el 'Día del whiskey sour'."
 
       ],
       recipe: {

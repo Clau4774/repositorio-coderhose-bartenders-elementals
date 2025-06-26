@@ -134,12 +134,6 @@ nav {
 
 /* NavBar */
 
-// .main-navbar {
-//     ul {
-        
-//     }
-// }
-
 .main-navigation-ul {
     padding-left: 0;
         margin-bottom: 0;
@@ -169,6 +163,7 @@ nav {
 
 #search-navbar{
     background: linear-gradient(#cdceca, #666665);
+    padding: .55rem 0;
 
         #input-busqueda {
         margin: auto;
@@ -203,7 +198,7 @@ nav {
                 span {
                     display: block;
                     width: 80%;
-                    text-align: center
+                    text-align: center;
                 };
             }
             
@@ -649,7 +644,8 @@ form {
     /* Header */
 
     .main-header {
-        position: static;
+        position: sticky;
+        top: -11%;
     }
 
     .header-container {
@@ -672,6 +668,16 @@ form {
             margin: 1.5rem auto;
         }
     }
+    
+    #main-navbar {
+    position: sticky;
+    top: 0;
+}
+
+    // #search-navbar {
+    //     position: sticky;
+    //     top: 0;
+    // }
 
     /* Last article container */
 
