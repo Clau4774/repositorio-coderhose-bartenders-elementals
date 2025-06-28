@@ -582,7 +582,6 @@ form textarea {
   }
   /* Header */
   .main-header {
-    position: sticky;
     top: -11%;
   }
   .header-container {
@@ -597,10 +596,6 @@ form textarea {
   section h2 {
     font-size: 1.5rem;
     margin: 1.5rem auto;
-  }
-  #main-navbar {
-    position: sticky;
-    top: 0;
   }
   /* Last article container */
   #last-articles-container {
@@ -670,9 +665,6 @@ form textarea {
 @media (min-width: 651px) and (max-width: 1024px) {
   .header-container-title-and-logos {
     padding: 0.5rem;
-  }
-  .main-header {
-    position: static;
   }
   .main-title {
     font-size: 2.5rem;

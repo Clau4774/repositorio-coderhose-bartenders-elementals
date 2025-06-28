@@ -20,7 +20,7 @@ export const encontrarArticulo = (option = undefined) => {
 
     const windowSearch = window.location.pathname + window.location.search;
 
-    const findArticle = articulosForo.find(elem => elem.information.link === windowSearch)
+    const findArticle = articulosForo.find(elem => elem.information.link.toLocaleLowerCase() === windowSearch.toLocaleLowerCase())
     
 
     return  findArticle || {error: 'Articulo no encontrado...'};

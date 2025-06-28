@@ -644,7 +644,7 @@ form {
     /* Header */
 
     .main-header {
-        position: sticky;
+        
         top: -11%;
     }
 
@@ -669,10 +669,6 @@ form {
         }
     }
     
-    #main-navbar {
-    position: sticky;
-    top: 0;
-}
 
     // #search-navbar {
     //     position: sticky;
@@ -768,10 +764,6 @@ form {
 
     .header-container-title-and-logos {
         padding: .5rem;
-    }
-
-    .main-header {
-        position: static;
     }
 
     .main-title {
