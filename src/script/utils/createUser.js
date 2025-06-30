@@ -1,4 +1,4 @@
-import { getElem } from "./getElem";
+import { getElem } from "./getElem.js";
 
 export const createUser = e => {
 
@@ -24,13 +24,20 @@ export const createUser = e => {
     const storageData = localStorage.getItem('usersList');
     let parsedData = JSON.parse(storageData);
 
+    const newId = parsedData.length + 1;
 
     const user = {
+        id: newId,
         name: nombre.value,
         surName: apellido.value,
         userName: userName.value,
-        password: password.value
+        password: password.value,
+        favorites: []
     }
+
+    const checkUserExists = parsedData.find(elem => elem.userName.includes(user.userName));
+
+    if(checkUserExists) return alert(`El usuario '${user.userName}' ya se encuentra creado, utilice otro nombre de usuario`)
 
     parsedData = [...parsedData, user];
 

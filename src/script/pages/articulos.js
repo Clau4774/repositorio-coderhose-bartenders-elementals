@@ -1,5 +1,8 @@
 import { cargarArticulos } from "../utils/cargarArticulos.js";
 import { buscador } from '../utils/buscador.js';
+import { getElem } from "../utils/getElem.js";
+import { showLogInMenu } from "../utils/showLogInMenu.js";
+
 
 const inputBusqueda = document.querySelector('#input-busqueda');
 
@@ -10,3 +13,7 @@ const lastArticlesContainer = document.querySelector("#last-articles-container")
 const articulosAMostrar = cargarArticulos();
 
 lastArticlesContainer.innerHTML = articulosAMostrar;
+
+const botonLogin = getElem('#log-in');
+
+botonLogin.addEventListener('click', showLogInMenu);

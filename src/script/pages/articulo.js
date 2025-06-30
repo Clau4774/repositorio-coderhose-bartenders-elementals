@@ -1,6 +1,8 @@
 import { encontrarArticulo } from "../utils/encontrarArticulo.js";
 import { cargarArticulo } from '../utils/cargarArticulo.js';
 import { buscador } from '../utils/buscador.js';
+import { getElem } from "../utils/getElem.js";
+import { showLogInMenu } from "../utils/showLogInMenu.js";
 
 const inputBusqueda = document.querySelector('#input-busqueda');
 
@@ -11,3 +13,7 @@ const resultado = encontrarArticulo();
 cargarArticulo(resultado);
 
 console.log(resultado)
+
+const botonLogin = getElem('#log-in');
+
+botonLogin.addEventListener('click', showLogInMenu);
