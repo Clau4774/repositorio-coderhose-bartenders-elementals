@@ -13,7 +13,7 @@ inputBusqueda.addEventListener('input', buscador);
 const lastArticlesContainer = getElem("#last-articles-container");
 
 const newArr = sortOrderArticles(articulosForo);
-console.log(newArr)
+
 const ultimosArticulos = cargarArticulos(3, newArr);
 
 lastArticlesContainer.innerHTML = ultimosArticulos;

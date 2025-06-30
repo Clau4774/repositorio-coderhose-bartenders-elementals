@@ -3,8 +3,6 @@ export const mostrarBusqueda = busqueda => {
 
     searchNavBarResult.innerHTML = '';
 
-    console.log(busqueda)
-
     if(busqueda === undefined ) return ;
 
     if(busqueda.error) return searchNavBarResult.innerHTML = `
@@ -12,8 +10,6 @@ export const mostrarBusqueda = busqueda => {
             <span class="search-not-found">${busqueda.error}</span>
         </li>
         `;
-
-    console.log(busqueda)
 
     searchNavBarResult.innerHTML += busqueda.map(search => `
         <li class="search-navbar-result-element">
