@@ -1,6 +1,6 @@
-export const cargarArticulo = (articulo) => {
-    const getElem = elem => document.querySelector(elem);
+import { getElem } from "./getElem.js";
 
+export const cargarArticulo = (articulo) => {
     const siteParts = {
         articleTitle: getElem('#article-title'),
         articleImage: getElem('#article-image'),

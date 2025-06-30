@@ -2,7 +2,7 @@ export const sortOrderArticles = toSort => {
     const sortedArray = [...toSort];
 
     sortedArray.sort((a, b) => {
-        const randomOrder = Math.floor(Math.random() * toSort.length + 1);
+        const randomOrder = Math.round(Math.random() * toSort.length + 1);
         console.log(randomOrder)
         
         return (a.id - randomOrder);

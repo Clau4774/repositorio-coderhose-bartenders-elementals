@@ -159,7 +159,7 @@ nav ul li a {
   padding: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(#cdceca, #666665);
+  background: linear-gradient(180deg, #cdceca, #666665);
 }
 #search-navbar #search-navbar-result .search-navbar-result-element .search-not-found {
   display: block;
@@ -177,6 +177,68 @@ nav ul li a {
   display: block;
   width: 80%;
   text-align: center;
+}
+
+@keyframes animatedMenuIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(15px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes animatedMenuOut {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#login-container {
+  position: absolute;
+  top: 175px;
+  right: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+#login-container #login-inputs-container {
+  position: absolute;
+  top: 41px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 0.55rem;
+  visibility: hidden;
+  opacity: 0;
+  background: linear-gradient(180deg, #cdceca, #666665);
+  padding: 1rem;
+}
+#login-container #login-inputs-container input {
+  width: 100%;
+}
+#login-container #login-inputs-container.showMenu {
+  animation: animatedMenuIn 0.3s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+}
+#login-container #login-inputs-container.hideMenu {
+  animation: animatedMenuOut 0.3s ease-in-out;
+  visibility: hidden;
+}
+#login-container #login-inputs-container.hidden {
+  visibility: hidden;
 }
 
 /* Animación efecto hover elementos del nav principal */
@@ -448,13 +510,15 @@ form input {
   box-shadow: 3px 3px 3px #333;
 }
 form textarea {
-  margin-bottom: 1rem;
   width: 100%;
   min-height: 150px;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: none;
   box-shadow: 3px 3px 3px #333;
+}
+form .button {
+  margin-top: 1rem;
 }
 
 /* Artículos container-categorías */

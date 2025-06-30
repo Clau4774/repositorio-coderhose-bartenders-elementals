@@ -164,7 +164,6 @@ nav {
 #search-navbar{
     background: linear-gradient(#cdceca, #666665);
     padding: .55rem 0;
-
         #input-busqueda {
         margin: auto;
         display: block;
@@ -179,7 +178,7 @@ nav {
         padding: 0;
         left: 50%;
         transform: translateX(-50%);
-        background: linear-gradient(#cdceca, #666665);
+        @include gradientBackground();
         
 
         .search-navbar-result-element {
@@ -208,6 +207,76 @@ nav {
     
 }
 
+@keyframes animatedMenuIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateY(15px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes animatedMenuOut {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    100% {
+        transform: translateY(-20px);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#login-container {
+    position: absolute;
+    top: 175px;
+    right: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;    
+
+    #login-inputs-container {
+        position: absolute;
+        top: 41px;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        gap: .55rem;
+        visibility: hidden;
+        opacity: 0;
+        @include gradientBackground();
+        padding: 1rem;
+        input {
+            width: 100%;
+        }
+        &.showMenu{
+            animation: animatedMenuIn .3s ease-in-out;
+            visibility: visible;
+            opacity: 1;
+            
+        };
+        &.hideMenu {
+            animation: animatedMenuOut .3s ease-in-out;
+            visibility: hidden;
+        }
+
+        &.hidden {
+            visibility: hidden;
+        }
+    }
+    
+}
 
 
 /* Animación efecto hover elementos del nav principal */
@@ -492,13 +561,16 @@ form {
         box-shadow: $articleContainerShadow;
     }
     textarea {
-        margin-bottom: 1rem;
         width: 100%;
         min-height: 150px;
         padding: 0.5rem 1rem;
         border-radius: $border-radius;
         border: none;
         box-shadow: $articleContainerShadow;
+    }
+
+    .button {
+        margin-top: 1rem;
     }
 }
 

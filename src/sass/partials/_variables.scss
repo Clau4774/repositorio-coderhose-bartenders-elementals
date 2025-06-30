@@ -30,6 +30,10 @@ $border-radius: 5px;
     box-shadow: $x $y $intensity $color;
 }
 
+@mixin gradientBackground($deg: 180deg , $color1: #cdceca, $color2: #666665 ) {
+    background: linear-gradient($deg, $color1, $color2);
+}
+
 /* Sombras */
 
 $shadow-right: 15px;
