@@ -1,9 +1,9 @@
 export const sortOrderArticles = toSort => {
-    console.log(toSort)
     const sortedArray = [...toSort];
 
     sortedArray.sort((a, b) => {
-        const randomOrder = Math.floor(Math.random() * toSort.length);
+        const randomOrder = Math.floor(Math.random() * toSort.length + 1);
+        console.log(randomOrder)
         
         return (a.id - randomOrder);
     })

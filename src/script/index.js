@@ -14,6 +14,3 @@ console.log(newArr)
 const ultimosArticulos = cargarArticulos(3, newArr);
 
 lastArticlesContainer.innerHTML = ultimosArticulos;
-
-
-console.log(newArr)
