@@ -1,7 +1,5 @@
 import { cargarArticulos } from "./utils/cargarArticulos.js";
 import { buscador } from './utils/buscador.js';
-import { sortOrderArticles } from "./utils/sortOrderArticles.js";
-import  articulosForo from "./data/articulosForo.js"
 import { showLogInMenu } from "./utils/showLogInMenu.js";
 import { getElem } from "./utils/getElem.js";
 import { checkLogIn } from "./utils/checkLogIn.js";
@@ -12,9 +10,9 @@ inputBusqueda.addEventListener('input', buscador);
 
 const lastArticlesContainer = getElem("#last-articles-container");
 
-const newArr = sortOrderArticles(articulosForo);
 
-const ultimosArticulos = cargarArticulos(3, newArr);
+
+const ultimosArticulos = await cargarArticulos(3);
 
 lastArticlesContainer.innerHTML = ultimosArticulos;
 

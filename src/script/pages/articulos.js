@@ -11,7 +11,7 @@ inputBusqueda.addEventListener('input', buscador);
 
 const lastArticlesContainer = document.querySelector("#last-articles-container");
 
-const articulosAMostrar = cargarArticulos();
+const articulosAMostrar = await cargarArticulos();
 
 lastArticlesContainer.innerHTML = articulosAMostrar;
 

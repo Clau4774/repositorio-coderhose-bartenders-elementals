@@ -1,5 +1,7 @@
+import { getElem } from './getElem.js';
+
 export const mostrarBusqueda = busqueda => {
-    const searchNavBarResult = document.querySelector('#search-navbar-result');
+    const searchNavBarResult = getElem('#search-navbar-result');
 
     searchNavBarResult.innerHTML = '';
 

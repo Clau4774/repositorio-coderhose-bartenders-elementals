@@ -1,15 +1,24 @@
-import articulosForo from '../data/articulosForo.js';
 import { crearTarjeta } from './crearTarjeta.js';
 
-const totalArticulos = articulosForo.length;
-
-const cargarArticulos = (howMany = totalArticulos || list.length, list = articulosForo) => {
-    let counter = 0;
-    return list.map(article => {
-        if(counter === howMany) return null;
-        counter ++;
-        return crearTarjeta(article);
-    }).join('');
+const cargarArticulos = async (howMany = undefined) => {
+    
+    try {
+        const bringData = await fetch('/src/script/data/articulosForo.json');
+        const articulosForo = await bringData.json();
+        console.log(articulosForo);
+        let counter = 0;
+        if(howMany === undefined) {
+            howMany = articulosForo.length;
+        }
+        return articulosForo.map(article => {
+            if(counter === howMany) return null;
+            counter ++;
+            return crearTarjeta(article);
+        }).join('');
+    } catch(e) {
+        console.error('No se pudo cargar la información...', e);
+    }
+    
 }
 
 

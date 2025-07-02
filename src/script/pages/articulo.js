@@ -9,7 +9,7 @@ const inputBusqueda = document.querySelector('#input-busqueda');
 
 inputBusqueda.addEventListener('input', buscador);
 
-const resultado = encontrarArticulo();
+const resultado = await encontrarArticulo();
 
 cargarArticulo(resultado);
 
