@@ -5,7 +5,6 @@ const cargarArticulos = async (howMany = undefined) => {
     try {
         const bringData = await fetch('/src/script/data/articulosForo.json');
         const articulosForo = await bringData.json();
-        console.log(articulosForo);
         let counter = 0;
         if(howMany === undefined) {
             howMany = articulosForo.length;

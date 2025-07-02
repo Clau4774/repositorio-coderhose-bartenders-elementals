@@ -143,8 +143,9 @@ nav ul li a {
 }
 
 #search-navbar {
-  background: linear-gradient(#cdceca, #666665);
+  background: linear-gradient(180deg, #cdceca, #666665);
   padding: 0.55rem 0;
+  box-shadow: 0px 5px 5px #333;
 }
 #search-navbar #input-busqueda {
   margin: auto;
@@ -663,6 +664,9 @@ form .button {
   section h2 {
     font-size: 1.5rem;
     margin: 1.5rem auto;
+  }
+  section h3 {
+    text-align: center;
   }
   /* Last article container */
   #last-articles-container {

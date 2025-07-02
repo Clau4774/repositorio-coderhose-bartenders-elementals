@@ -162,8 +162,9 @@ nav {
 }
 
 #search-navbar{
-    background: linear-gradient(#cdceca, #666665);
+    @include gradientBackground();
     padding: .55rem 0;
+    @include boxShadow($x: 0px, $y: 5px, $intensity: 5px);
         #input-busqueda {
         margin: auto;
         display: block;
@@ -742,6 +743,11 @@ form {
         }
     }
     
+    section {
+        h3 {
+            text-align: center;
+        }
+    }
 
     // #search-navbar {
     //     position: sticky;
