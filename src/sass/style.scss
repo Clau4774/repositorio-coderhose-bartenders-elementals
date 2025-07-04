@@ -177,6 +177,7 @@ nav {
         width: 300px;
         position: absolute;
         padding: 0;
+        z-index: 1;
         left: 50%;
         list-style: none;
         transform: translateX(-50%);
@@ -325,7 +326,6 @@ section {
      h2 {
         margin: auto;
         font-size: 2rem;
-        max-width: 550px;
         text-align: center;
         text-decoration: underline;
         margin-bottom: 1rem;

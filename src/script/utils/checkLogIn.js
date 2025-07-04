@@ -1,6 +1,8 @@
 import { getElem } from "./getElem.js"
+import { logUser } from "./logUser.js";
 
-export const checkLogIn = elem => {
+export const checkLogIn = () => {
+
     const inputUserName = getElem('#user-login-name');
     const inputPassword = getElem('#user-login-password');
 
@@ -9,13 +11,21 @@ export const checkLogIn = elem => {
 
     if(userNameValue.trim() === '' || passwordValue.trim() === '') return alert("Tiene que completar los campos");
 
-    if(localStorage.length === 0) return alert('Al parecer aun no hay usuarios');
+    const hasUsers = localStorage.getItem('usersList');
+
+    if(hasUsers === null) return alert('Al parecer aun no hay usuarios');
 
     const localStorageData = JSON.parse(localStorage.getItem('usersList'));
 
     const checkUserLog = localStorageData.find(elem => elem.userName === userNameValue && elem.password === passwordValue);
 
-    if(!checkUserLog) return alert('No se ha encontrado el usuario');
+    if(!checkUserLog) {
+        inputUserName.value = '';
+        inputPassword.value = '';
+        return alert('No se ha encontrado el usuario');
+    }
+
+    logUser(checkUserLog);
 
     alert(`Usuario '${userNameValue}' validado correctamente`);
     

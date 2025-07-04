@@ -15,9 +15,10 @@ export const createUser = e => {
 
     if(nombre.value.trim() === '' || apellido.value.trim() === '' || userName.value.trim() === '' || password.value.trim() === '' || passwordCheck.value.trim() === '') return alert('Algunos de los campos está vació, tenés que completarlos todos')
 
+    const usersExist = localStorage.getItem('usersList');
 
 
-    if(localStorage.length === 0) {
+    if(usersExist === null) {
         localStorage.setItem('usersList', '[]');
     }
 

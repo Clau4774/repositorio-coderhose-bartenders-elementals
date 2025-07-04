@@ -3,14 +3,13 @@ import { buscador } from './utils/buscador.js';
 import { showLogInMenu } from "./utils/showLogInMenu.js";
 import { getElem } from "./utils/getElem.js";
 import { checkLogIn } from "./utils/checkLogIn.js";
+import { checkUserSessionLog } from "./utils/checkUserSessionLog.js";
 
 const inputBusqueda = getElem('#input-busqueda');
 
 inputBusqueda.addEventListener('input', buscador);
 
 const lastArticlesContainer = getElem("#last-articles-container");
-
-
 
 const ultimosArticulos = await cargarArticulos(3);
 
@@ -22,3 +21,5 @@ botonLogin.addEventListener('click', showLogInMenu);
 
 const logButton = getElem('#button-log-in');
 logButton.addEventListener('click', checkLogIn);
+
+checkUserSessionLog()
