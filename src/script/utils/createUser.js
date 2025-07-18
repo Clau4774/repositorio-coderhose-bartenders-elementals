@@ -13,7 +13,10 @@ export const createUser = e => {
 
     const { nombre, apellido, userName, password, passwordCheck } = inputs;
 
-    if(nombre.value.trim() === '' || apellido.value.trim() === '' || userName.value.trim() === '' || password.value.trim() === '' || passwordCheck.value.trim() === '') return alert('Algunos de los campos está vació, tenés que completarlos todos')
+    if(nombre.value.trim() === '' || apellido.value.trim() === '' || userName.value.trim() === '' || password.value.trim() === '' || passwordCheck.value.trim() === '') return Swal.fire({
+        title: 'Algunos de los campos está vació, tenés que completarlos todos',
+        icon: 'warning' 
+    });
 
     const usersExist = localStorage.getItem('usersList');
 
@@ -38,7 +41,19 @@ export const createUser = e => {
 
     const checkUserExists = parsedData.find(elem => elem.userName.includes(user.userName));
 
-    if(checkUserExists) return alert(`El usuario '${user.userName}' ya se encuentra creado, utilice otro nombre de usuario`)
+    if(checkUserExists) {
+
+        nombre.value = '';
+        apellido.value = '';
+        userName.value = '';
+        password.value = '';
+        passwordCheck.value = '';
+
+        return Swal.fire({
+        title: `El usuario '${user.userName}' ya se encuentra creado, utilice otro nombre de usuario`,
+        icon: 'warning' 
+    });
+    }
 
     parsedData = [...parsedData, user];
 
@@ -47,6 +62,9 @@ export const createUser = e => {
     
     localStorage.setItem('usersList',jsonData);
 
-    alert(`Se creo el usuario: ${user.userName}`);
+    Swal.fire({
+        title: 'Usuario creado con éxito',
+        icon: 'success'
+    })
     
 }

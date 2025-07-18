@@ -1,3 +1,4 @@
+
 import { getElem } from "./getElem.js"
 import { logUser } from "./logUser.js";
 
@@ -9,11 +10,17 @@ export const checkLogIn = () => {
     const userNameValue = inputUserName.value;
     const passwordValue = inputPassword.value;
 
-    if(userNameValue.trim() === '' || passwordValue.trim() === '') return alert("Tiene que completar los campos");
+    if(userNameValue.trim() === '' || passwordValue.trim() === '') return Swal.fire({
+        title: "Tienes que completar los campos",
+        icon: "warning"
+    });
 
     const hasUsers = localStorage.getItem('usersList');
-
-    if(hasUsers === null) return alert('Al parecer aun no hay usuarios');
+    
+    if(hasUsers === null) return Swal.fire({
+        title: 'Al parecer aun no hay usuarios',
+        icon: 'warning'
+    })
 
     const localStorageData = JSON.parse(localStorage.getItem('usersList'));
 
@@ -22,12 +29,18 @@ export const checkLogIn = () => {
     if(!checkUserLog) {
         inputUserName.value = '';
         inputPassword.value = '';
-        return alert('No se ha encontrado el usuario');
+        return Swal.fire({
+            title: 'No se ha encontrado el usuario',
+            icon: 'error'
+        })
     }
 
     logUser(checkUserLog);
 
-    alert(`Usuario '${userNameValue}' validado correctamente`);
+    Swal.fire({
+        title: `Usuario '${userNameValue}' validado correctamente`,
+        icon: 'success'
+    })
     
     inputUserName.value = '';
     inputPassword.value = '';
