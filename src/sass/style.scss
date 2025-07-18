@@ -244,7 +244,7 @@ nav {
 #login-container {
     position: absolute;
     top: 175px;
-    right: 4rem;
+    right: 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,11 +275,25 @@ nav {
             visibility: hidden;
         }
 
-        &.hidden {
-            visibility: hidden;
-        }
+        
     }
     
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#user-menu-container {
+    width: 250px;
+    min-height: 60px;
+    position: absolute;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: -100%;
+    transform: translateX(-25%);
 }
 
 
@@ -666,6 +680,9 @@ form {
         border-radius: $border-radius;
     }
 }
+
+/* Menu user Logged */
+
 
 /* Media querys */
 

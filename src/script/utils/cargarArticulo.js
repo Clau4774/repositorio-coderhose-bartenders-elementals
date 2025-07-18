@@ -34,7 +34,7 @@ export const cargarArticulo = (articulo) => {
     articleImage.src = imagePath;
     articleImage.alt = imageAltText;
 
-    ingredientsContainer.innerHTML = `<li class="ingredient">Método de elaboración: ${elaborationMethod}</li> <li class="ingredient">Cristalería: ${glass}</li> ` + ingredientList.map(ingrediente => `<li class="ingredient">${ingrediente.ingredientQuantity} ${ingrediente.mesureScale} ${ingrediente.ingredientName}</li>`).join('') + `<li>Garnish: ${garnish}</li>`;
+    ingredientsContainer.innerHTML = `<li class="ingredient">Método de elaboración: ${elaborationMethod}</li> <li class="ingredient">Cristalería: ${glass}</li> <li class="ingredient">Hielo: ${iceType}</li> <li class="ingredient">Dificultad: ${difficulty}</li>` + ingredientList.map(ingrediente => `<li class="ingredient">${ingrediente.ingredientQuantity} ${ingrediente.mesureScale} ${ingrediente.ingredientName}</li>`).join('') + `<li>Garnish: ${garnish}</li>`;
 
     cocktailHistoryTitle.innerText = historyTitle;
     cocktailHistoryContainer.innerHTML = historyContent.map(item => `<p>${item}</p>`).join('');
