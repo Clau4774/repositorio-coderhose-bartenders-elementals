@@ -40,7 +40,7 @@ export const checkLogIn = () => {
     Swal.fire({
         title: `Usuario '${userNameValue}' validado correctamente`,
         icon: 'success'
-    })
+    }).then(() => window.location.reload());
     
     inputUserName.value = '';
     inputPassword.value = '';

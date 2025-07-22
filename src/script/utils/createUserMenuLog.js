@@ -4,15 +4,13 @@ import { logOutUser } from "./logOutUser.js";
 
 export const createUserMenuLog = user => {
     const loginContainer = getElem("#login-container");
-    
-    
 
     loginContainer.innerHTML = `
         <div id="user-container">
             <button id="user-expand-button" class="">${user.userName}</button>
             <div id="user-menu-container" class="hidden">
                 <div id="user-favorites">
-                <p>Algo</p>
+                    <p>Algo</p>
                 </div>
                 <button id="button-log-out">Salir de la cuenta</button>
             </div>

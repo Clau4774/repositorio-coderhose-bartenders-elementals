@@ -6,8 +6,9 @@ export const checkUserSessionLog = () => {
     if(userIsLogged === 'true') {
         const userLog = localStorage.getItem('userLogged');
         const parseUser = JSON.parse(userLog)
-       return logUser(parseUser);
+       logUser(parseUser);
+       return true;
     }
 
-    return;
+    return false;
 }

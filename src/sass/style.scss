@@ -447,6 +447,7 @@ section {
 /*Articulo*/
 
 .article-introduction-container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -455,6 +456,7 @@ section {
     border-radius: $border-radius;
     margin: auto;
     background: radial-gradient(#ccc, $gris);
+    margin-bottom: 2.5rem;
     @include boxShadow($x: 4px, $y: 4px, $intensity: 10px);
     .article-introduction-image-container {
         width: 30%;
@@ -487,6 +489,21 @@ section {
                     border-bottom: none;
                 }
             }
+        }
+    }
+
+    .article-like-button {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 101%;
+        bottom: -3.5rem;
+        padding: 0.5rem;
+        background: radial-gradient(#ccc, $gris);
+        @include boxShadow($x: 4px, $y: 4px, $intensity: 10px);
+        img {
+            width: 32px;
+            margin: auto;
         }
     }
 }

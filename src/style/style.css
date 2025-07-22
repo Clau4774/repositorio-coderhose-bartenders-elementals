@@ -400,6 +400,7 @@ section h3 {
 
 /*Articulo*/
 .article-introduction-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -408,6 +409,7 @@ section h3 {
   border-radius: 5px;
   margin: auto;
   background: radial-gradient(#ccc, #333);
+  margin-bottom: 2.5rem;
   box-shadow: 4px 4px 10px #333;
 }
 .article-introduction-container .article-introduction-image-container {
@@ -440,6 +442,20 @@ section h3 {
 }
 .article-introduction-container .article-introduction-recipe-container #article-introduction-recipe-ingredient .ingredient:last-child {
   border-bottom: none;
+}
+.article-introduction-container .article-like-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 101%;
+  bottom: -3.5rem;
+  padding: 0.5rem;
+  background: radial-gradient(#ccc, #333);
+  box-shadow: 4px 4px 10px #333;
+}
+.article-introduction-container .article-like-button img {
+  width: 32px;
+  margin: auto;
 }
 
 #article-title {
