@@ -10,7 +10,7 @@ export const createUserMenuLog = user => {
             <button id="user-expand-button" class="">${user.userName}</button>
             <div id="user-menu-container" class="hidden">
                 <ul id="user-favorites">
-                    ${user.favorites.map(elem => '<li> <a href=" ' + elem.information.link+ ' "><img src="' + elem.imageInfo.imagePath + '" alt=" '+elem.imageInfo.imageAltText + '"/>' +elem.name + ' </a></li>').join('')}
+                    ${(user.favorites.length !== 0) ? user.favorites.map(elem => '<li class="favorite-element"> <a href=" ' + elem.information.link+ ' "><img src="' + elem.imageInfo.imagePath + '" alt=" '+elem.imageInfo.imageAltText + '"/><span>' +elem.name + '</span> </a></li>').join(''): '<li><span>Aun no hay favoritos</span></li>'}
                 </ul>
                 <button id="button-log-out">Salir de la cuenta</button>
             </div>

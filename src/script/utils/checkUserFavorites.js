@@ -1,5 +1,5 @@
-export const checkUserFavorites = (user, drink) => {
-    const checkUserFavorites = user.favorites.find(elem => elem.id === drink.id);
+export const checkUserFavorites = (user, article) => {
+    const checkUserFavorites = user.favorites.find(elem => elem.id === article.id);
 
     if(checkUserFavorites) {
         return checkUserFavorites;

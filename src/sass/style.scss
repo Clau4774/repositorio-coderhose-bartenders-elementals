@@ -287,13 +287,40 @@ nav {
 #user-menu-container {
     width: 250px;
     min-height: 60px;
+    max-height: 80vh;
+    padding: 1rem;
+    border-radius: $border-radius;
     position: absolute;
-    background: red;
+    @include gradientBackground;
     display: flex;
     flex-direction: column;
     align-items: center;
     left: -100%;
     transform: translateX(-25%);
+
+    #user-favorites {
+    list-style: none;
+    padding: 0;
+    
+    .favorite-element {
+        margin-bottom: .5rem;    
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            @include textShadow;
+            img {
+                width: 30%;
+            }
+            span {
+                width: 70%;
+            }
+        }
+        
+    }
+    }
 }
 
 
@@ -699,6 +726,7 @@ form {
 }
 
 /* Menu user Logged */
+
 
 
 /* Media querys */
