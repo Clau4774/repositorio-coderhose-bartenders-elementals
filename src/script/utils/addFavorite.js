@@ -9,11 +9,14 @@ export const addFavorite = result => {
         const userUpdateList = user.favorites.filter(elem => elem.id !== userHaveFavorite.id);
         user.favorites = userUpdateList;
         
-        return localStorage.setItem('userLogged', JSON.stringify(user));
+        localStorage.setItem('userLogged', JSON.stringify(user));
+
+        return window.location.reload();
     }
 
     user.favorites = [...user.favorites, result];
 
-    return localStorage.setItem('userLogged', JSON.stringify(user));
+    localStorage.setItem('userLogged', JSON.stringify(user));
 
+    return window.location.reload();
 }
