@@ -6,6 +6,7 @@ import { showLogInMenu } from "../utils/showLogInMenu.js";
 import { checkLogIn } from "../utils/checkLogIn.js";
 import { checkUserSessionLog } from "../utils/checkUserSessionLog.js";
 import { showAddFavorite } from "../utils/showAddFavorite.js";
+import { addFavorite } from "../utils/addFavorite.js";
 
 const inputBusqueda = document.querySelector('#input-busqueda');
 
@@ -21,16 +22,13 @@ botonLogin.addEventListener('click', showLogInMenu);
 const logButton = getElem('#button-log-in');
 logButton.addEventListener('click', checkLogIn);
 
-
-
-
 const isLogged = checkUserSessionLog();
 
 if(isLogged) {
-    showAddFavorite();
+    showAddFavorite(resultado);
 
     const articleLikeButton = getElem('.article-like-button');
     articleLikeButton.addEventListener('click', () => {
-        console.log(resultado)
+        addFavorite(resultado);
     });
 }

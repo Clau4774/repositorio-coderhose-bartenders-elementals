@@ -9,9 +9,9 @@ export const createUserMenuLog = user => {
         <div id="user-container">
             <button id="user-expand-button" class="">${user.userName}</button>
             <div id="user-menu-container" class="hidden">
-                <div id="user-favorites">
-                    <p>Algo</p>
-                </div>
+                <ul id="user-favorites">
+                    ${user.favorites.map(elem => '<li> <a href=" ' + elem.information.link+ ' "><img src="' + elem.imageInfo.imagePath + '" alt=" '+elem.imageInfo.imageAltText + '"/>' +elem.name + ' </a></li>').join('')}
+                </ul>
                 <button id="button-log-out">Salir de la cuenta</button>
             </div>
         </div>
