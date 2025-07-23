@@ -3,8 +3,6 @@ export const logOutUser = () => {
         const getUsersList = JSON.parse(localStorage.getItem('usersList'));
         const updatedUsersList = getUsersList.map(user => user.id === getLoggedUser.id ? user = {...getLoggedUser} : user)
 
-        console.log(updatedUsersList)
-
         localStorage.setItem('usersList', JSON.stringify(updatedUsersList));
 
         localStorage.setItem('isLogged', 'false');

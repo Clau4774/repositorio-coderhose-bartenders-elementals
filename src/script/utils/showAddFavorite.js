@@ -1,28 +1,38 @@
+import { addFavorite } from "./addFavorite.js";
 import { checkUserFavorites } from "./checkUserFavorites.js";
 import { getElem } from "./getElem.js";
 
 export const showAddFavorite = (resultado) => {
+
     const articleIntroductionContainer = getElem('.article-introduction-container');
 
     const user = JSON.parse(localStorage.getItem('userLogged'));
 
-    console.log(user)
-
     const hasInFavoriteList = checkUserFavorites(user, resultado)
+
+    let button = '';
+
 
     if(hasInFavoriteList) {
         
-        articleIntroductionContainer.innerHTML += `
+        button = `
             <button class="article-like-button">
                 <img src="../assets/iconos/favorite-selected.png" alt="favorite icon selected" />
             </button>`;
-        return
     } else {
-        articleIntroductionContainer.innerHTML += `
+        button = `
             <button class="article-like-button">
                 <img src="../assets/iconos/favorito.png" alt="favorite icon" />
             </button>`;
     }
 
+    articleIntroductionContainer.querySelectorAll('.article-like-button').forEach(btn => btn.remove());
+    articleIntroductionContainer.insertAdjacentHTML('beforeend', button)
+
+    const articleLikeButton = getElem('.article-like-button');
+    
+        articleLikeButton.addEventListener('click', () => {
+            addFavorite(resultado);
+        });
     
 }

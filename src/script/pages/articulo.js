@@ -26,9 +26,4 @@ const isLogged = checkUserSessionLog();
 
 if(isLogged) {
     showAddFavorite(resultado);
-
-    const articleLikeButton = getElem('.article-like-button');
-    articleLikeButton.addEventListener('click', () => {
-        addFavorite(resultado);
-    });
 }
