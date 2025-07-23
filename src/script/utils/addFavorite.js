@@ -18,7 +18,7 @@ export const addFavorite = result => {
         showAddFavorite(result);
 
         Toastify({
-        text: 'Se quitado de favoritos',
+        text: 'Se ha quitado de favoritos',
         gravity: 'bottom',
         duration: 1500,
         close: true,
