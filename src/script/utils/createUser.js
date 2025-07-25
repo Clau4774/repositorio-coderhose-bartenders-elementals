@@ -14,7 +14,8 @@ export const createUser = e => {
     const { nombre, apellido, userName, password, passwordCheck } = inputs;
 
     if(nombre.value.trim() === '' || apellido.value.trim() === '' || userName.value.trim() === '' || password.value.trim() === '' || passwordCheck.value.trim() === '') return Swal.fire({
-        title: 'Algunos de los campos está vació, tenés que completarlos todos',
+        title: 'Falta completar información',
+        text: 'Tiene que completar todos los campos',
         icon: 'warning' 
     });
 
@@ -50,7 +51,8 @@ export const createUser = e => {
         passwordCheck.value = '';
 
         return Swal.fire({
-        title: `El usuario '${user.userName}' ya se encuentra creado, utilice otro nombre de usuario`,
+        title: '¡Usuario existente!',
+        text: `El usuario '${user.userName}' ya se encuentra creado. Utilice otro nombre de usuario`,
         icon: 'warning' 
     });
     }
